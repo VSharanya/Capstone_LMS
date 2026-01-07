@@ -30,7 +30,6 @@ LoanSphere is a modern, full-stack Loan Management System designed to streamline
 ### 🛡️ Admin Portal
 - **User Management**: Create and manage Loan Officers and Admins.
 - **Loan Products**: Configure loan types, interest rates, and tenure options.
-- **System Reports**: Generate high-level reports on loan distribution, overdue payments, and collections.
 
 ### 🔔 Shared Features
 - **Notifications**: Real-time alerts for loan updates, approvals, and reminders.
