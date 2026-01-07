@@ -56,7 +56,7 @@ LoanSphere is a modern, full-stack Loan Management System designed to streamline
 ### Prerequisites
 - **Node.js**: v18 or higher
 - **Angular CLI**: v19/v20
-- **.NET SDK**: 8.0
+- **.NET SDK**: 9.0
 - **SQL Server**: Local or hosted instance
 
 ### Installation
