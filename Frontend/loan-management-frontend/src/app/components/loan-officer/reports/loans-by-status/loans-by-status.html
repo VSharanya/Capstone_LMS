@@ -1,0 +1,99 @@
+<div class="main-content">
+    <div class="page-header">
+        <div class="header-content">
+            <h1>Loans by Status</h1>
+            <p class="subtitle">Overview of loan application statuses and distribution.</p>
+        </div>
+    </div>
+
+    <div class="report-content">
+        <!-- Chart Section -->
+        <mat-card class="chart-card">
+            <mat-card-header>
+                <mat-card-title>Distribution Overview</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="chart-content">
+                <div class="visuals" *ngIf="data().length">
+                    <!-- PIE CHART -->
+                    <div class="pie-chart-container">
+                        <div class="pie-chart" [style.background]="chartGradient()">
+                            <div class="hole">
+                                <span class="total-label">Total</span>
+                                <span class="total-count">{{ getTotalLoans() }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LEGEND -->
+                    <div class="legend">
+                        <div class="legend-item">
+                            <span class="dot approved"></span>
+                            <span class="label">Active/Approved</span>
+                            <span class="count-badge">{{ getCount('Approved') + getCount('Active') }}</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot applied"></span>
+                            <span class="label">Applied/Pending</span>
+                            <span class="count-badge">{{ getCount('Applied') }}</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot under-review"></span>
+                            <span class="label">Under Review</span>
+                            <span class="count-badge">{{ getCount('Under Review') }}</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot rejected"></span>
+                            <span class="label">Rejected</span>
+                            <span class="count-badge">{{ getCount('Rejected') }}</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot closed"></span>
+                            <span class="label">Closed</span>
+                            <span class="count-badge">{{ getCount('Closed') }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="!data().length" class="no-data">
+                    <p>No loan data available to display.</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Table Section -->
+        <mat-card class="table-card">
+            <mat-card-header>
+                <mat-card-title>Detailed Breakdown</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <table mat-table [dataSource]="data()" class="mat-elevation-z0 report-table">
+
+                    <ng-container matColumnDef="status">
+                        <th mat-header-cell *matHeaderCellDef> Status </th>
+                        <td mat-cell *matCellDef="let element">
+                            <span class="status-pill" [ngClass]="{
+                      'approved': element.status === 'Approved' || element.status === 'Active',
+                      'rejected': element.status === 'Rejected',
+                      'applied': element.status === 'Applied',
+                      'under-review': element.status === 'Under Review',
+                      'closed': element.status === 'Closed'
+                    }">
+                                {{element.status}}
+                            </span>
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="count">
+                        <th mat-header-cell *matHeaderCellDef> Count </th>
+                        <td mat-cell *matCellDef="let element" style="font-weight: 600; color: #334155;">
+                            {{element.count}}
+                        </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

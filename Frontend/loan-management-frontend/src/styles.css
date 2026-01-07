@@ -1,0 +1,137 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    /* Lighter gray background */
+    color: #2c3e50;
+    /* Softer text color */
+}
+
+/* Material Overrides */
+.mat-mdc-card {
+    border-radius: 20px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04) !important;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+}
+
+.mat-mdc-button-base {
+    border-radius: 10px !important;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+/* Layout */
+.main-content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 70px);
+}
+
+/* Buttons */
+.mat-mdc-button-base.mat-primary {
+    background-color: #2563eb !important;
+    /* Brighter, modern blue */
+    color: white !important;
+}
+
+.mat-mdc-button-base.mat-accent {
+    background-color: #2563eb !important;
+    /* Unified color scheme */
+    color: white !important;
+}
+
+/* Ensure Form Fields don't get the background */
+.mat-mdc-form-field {
+    background-color: transparent !important;
+}
+
+.mat-mdc-text-field-wrapper {
+    background-color: white !important;
+}
+
+/* Inputs - Force clean look */
+.mat-mdc-form-field-flex {
+    background-color: transparent !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #1e293b !important;
+}
+
+/* Tables */
+.mat-mdc-table {
+    background: transparent !important;
+}
+
+.mat-mdc-row:hover {
+    background-color: #f5f5f5;
+}
+
+/* Chips */
+.mat-mdc-chip {
+    font-weight: 500;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* Animation utilities */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

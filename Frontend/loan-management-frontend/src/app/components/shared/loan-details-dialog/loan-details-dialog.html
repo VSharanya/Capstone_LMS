@@ -1,0 +1,57 @@
+<h2 mat-dialog-title>Loan Application Details</h2>
+<mat-dialog-content>
+    <div class="section">
+        <h3>Applicant Information</h3>
+        <div class="detail-row">
+            <span class="label">Name</span>
+            <span class="value">{{ data.loan.customerName }}</span>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="section" style="margin-top: 24px;">
+        <h3>Loan Details</h3>
+        <div class="detail-row">
+            <span class="label">Loan ID</span>
+            <span class="value">#{{ data.loan.loanId }}</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Loan Type</span>
+            <span class="value">{{ data.loan.loanType }}</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Amount Requested</span>
+            <span class="value">{{ data.loan.loanAmount | currency:'INR' }}</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Tenure</span>
+            <span class="value">{{ data.loan.tenureMonths }} months</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Applied On</span>
+            <span class="value">{{ data.loan.appliedDate | date:'mediumDate' }}</span>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="section" style="margin-top: 24px;">
+        <div class="detail-row">
+            <span class="label">Current Status</span>
+            <span class="value"
+                [style.color]="data.loan.status === 'Approved' ? 'green' : (data.loan.status === 'Rejected' ? 'red' : 'blue')">
+                {{ data.loan.status }}
+            </span>
+        </div>
+        <div class="detail-row" *ngIf="data.loan.remarks">
+            <span class="label">Officer Remarks</span>
+            <span class="value">{{ data.loan.remarks }}</span>
+        </div>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

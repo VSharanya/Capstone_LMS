@@ -1,0 +1,52 @@
+<div class="dialog-header">
+    <h2 mat-dialog-title>Loan Documents</h2>
+    <button mat-icon-button mat-dialog-close tabindex="-1">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<mat-dialog-content class="content-area">
+
+    <!-- Loading State -->
+    <div *ngIf="loading" class="loading-state">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        <p>Fetching documents...</p>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!loading && documents.length === 0" class="empty-state">
+        <mat-icon>folder_open</mat-icon>
+        <p>No documents found for this loan.</p>
+    </div>
+
+    <!-- List State -->
+    <div *ngIf="!loading && documents.length > 0" class="doc-list">
+
+        <div class="doc-item" *ngFor="let doc of documents">
+            <div class="doc-icon">
+                <mat-icon *ngIf="isImage(doc.originalFileName)">image</mat-icon>
+                <mat-icon *ngIf="!isImage(doc.originalFileName)">picture_as_pdf</mat-icon>
+            </div>
+
+            <div class="doc-info">
+                <span class="file-name">{{ doc.originalFileName }}</span>
+                <div class="meta">
+                    <span class="chip">{{ doc.documentType }}</span>
+                    <span class="date">{{ doc.uploadedDate | date:'mediumDate' }}</span>
+                </div>
+            </div>
+
+            <div class="doc-actions">
+                <button mat-icon-button color="primary" (click)="download(doc)" matTooltip="Download File">
+                    <mat-icon>download</mat-icon>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

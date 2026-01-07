@@ -1,0 +1,126 @@
+.report-container {
+    padding: 24px;
+    background-color: var(--bg-color-light, #f8fafc);
+}
+
+.report-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    background: white;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.header-icon {
+    background: #fee2e2;
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.header-icon mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+mat-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+mat-card-subtitle {
+    color: #64748b;
+    margin-top: 4px;
+}
+
+
+.table-container {
+    margin-top: 24px;
+    overflow-x: auto;
+}
+
+.premium-table {
+    width: 100%;
+}
+
+.premium-table th.mat-header-cell {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f5f9;
+    padding: 16px;
+}
+
+.premium-table td.mat-cell {
+    padding: 16px;
+    color: #334155;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f8fafc;
+}
+
+.hover-row:hover {
+    background-color: #f8fafc;
+    transition: background-color 0.2s ease;
+}
+
+
+.loan-id-badge {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.amount-danger {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.count-badge {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #10b981;
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.empty-state p {
+    color: #64748b;
+    margin-top: 8px;
+}

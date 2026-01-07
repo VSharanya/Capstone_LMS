@@ -1,0 +1,117 @@
+LINQ QUERIES REPORT
+-------------------
+
+Here is a comprehensive summary of the LINQ queries used within the backend of the Loan Management System.
+
+REPOSITORIES
+
+1. LoanRepository.cs
+   - Filtering loans by status:
+     .Where(l => l.Status == status)
+
+   - Filtering loans by customer ID:
+     .Where(l => l.CustomerId == customerId)
+
+   - Customer Loan Summary (aggregating total loans, active loans, and outstanding amounts):
+     .GroupBy(l => new { l.CustomerId, l.Customer.FullName, l.Customer.Email })
+     .Select(g => new CustomerLoanSummaryDto {
+         TotalLoans = g.Count(),
+         ActiveLoans = g.Count(l => l.Status == LoanStatusConstants.Active),
+         TotalLoanAmount = g.Sum(l => l.LoanAmount),
+         // Calculating Total Outstanding for Active Loans
+         TotalOutstanding = g.Where(l => l.Status == LoanStatusConstants.Active).Sum(l => l.LoanAmount)
+     })
+   
+   - Dynamic Filtering (Officers):
+      .Where(l => l.ApprovedBy == officerId || l.VerifiedBy == officerId || l.Status == ... )
+
+   - Checking for active loans:
+     .AnyAsync(l => l.CustomerId == customerId && l.LoanTypeId == loanTypeId && l.Status == "Active")
+
+2. ReportRepository.cs
+   - Grouping loans by status to count them:
+     .GroupBy(l => l.Status).Select(...)
+
+   - Finding overdue EMIs (unpaid and past due date):
+     .Where(e => !e.IsPaid && e.DueDate < today)
+
+   - Calculating monthly collection totals:
+     .Where(e => e.PaymentDate.HasValue && ...).Sum(e => e.EMIAmount)
+
+3. NotificationRepository.cs
+   - Retrieving user notifications sorted by date:
+     .Where(n => n.UserId == userId).OrderByDescending(n => n.CreatedAt)
+   
+   - Finding unread notifications:
+     .Where(n => n.UserId == userId && !n.IsRead)
+
+4. EmiRepository.cs
+   - Retrieving EMIs for a specific loan, sorted by installment number:
+     .Where(e => e.LoanId == loanId).OrderBy(e => e.InstallmentNumber)
+   
+   - Finding unpaid EMIs for a loan:
+     .Where(e => e.LoanId == loanId && !e.IsPaid)
+
+   - Filtering EMIs by Month and Year (for helper methods):
+     .Where(e => e.DueDate.Month == month && e.DueDate.Year == year)
+
+5. UserRepository.cs
+   - Filtering active users by role and sorting by name:
+     .Where(u => u.Role == role && u.IsActive).OrderBy(u => u.FullName)
+
+6. LoanTypeRepository.cs
+   - Filtering active loan types:
+     .Where(l => l.IsActive)
+
+7. DocumentRepository.cs
+   - Retrieving documents for a specific loan application:
+     .Where(d => d.LoanApplicationId == loanId)
+
+8. PaymentRepository.cs
+   - Retrieving payments for a loan, sorted by date:
+     .Where(p => p.EMI.LoanId == loanId).OrderByDescending(p => p.PaymentDate)
+
+
+SERVICES
+
+1. EmiService.cs
+   - Check if a loan is fully paid (all EMIs are paid):
+     loan.EMIs.All(e => e.IsPaid)
+
+   - Retrieving the list of unpaid EMIs:
+     loan.EMIs.Where(e => !e.IsPaid).OrderBy(e => e.InstallmentNumber)
+
+   - Getting the next closing EMI (first unpaid installment):
+     unpaidEmis.First()
+   
+   - Calculating deletion candidates (all unpaid except the current closing one):
+     unpaidEmis.Where(e => e.EMIId != closingEmi.EMIId)
+
+2. LoanService.cs
+   - Applying dynamic filters to loan queries:
+     query = query.Where(l => l.Status == status)
+
+
+MAPPINGS (AutoMapper)
+
+- Calculating total paid and outstanding amounts for loan objects:
+  // Total Paid Amount
+  src.EMIs.Where(e => e.IsPaid).Sum(e => e.EMIAmount)
+  
+  // Total Outstanding Amount (Sum of unpaid EMIs)
+  src.EMIs.Where(e => !e.IsPaid).Sum(e => e.EMIAmount)
+  
+  // Checking if documents exist
+  src.LoanDocuments.Any()
+
+
+SUMMARY OF METHODS
+The project primarily uses the following LINQ methods:
+- Where: To filter lists based on conditions.
+- Select: To transform data into DTOs.
+- GroupBy: To group data for reports.
+- OrderBy / OrderByDescending: Sorting.
+- Sum: To calculate financial totals.
+- Count: Counting records.
+- All / Any: To check conditions across a list.
+- First / FirstOrDefault: Retrieving single items.

@@ -1,0 +1,77 @@
+.loans-container {
+    padding: 30px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1f36;
+    
+    margin: 0 0 16px 0;
+}
+
+.filters-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.search-field {
+    width: 300px;
+}
+
+.status-filter {
+    width: 200px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    
+}
+
+th.mat-header-cell {
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid #e5e7eb;
+    
+}
+
+td.mat-cell {
+    padding: 16px 8px;
+    color: #374151;
+    font-size: 14px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.actions-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.small-btn {
+    line-height: 28px !important;
+    padding: 0 12px !important;
+    min-width: 60px !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+}
+
+.small-icon-btn {
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    padding: 0 !important;
+}
+
+.small-icon-btn mat-icon {
+    font-size: 18px !important;
+    width: 18px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+}

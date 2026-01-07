@@ -1,0 +1,77 @@
+<div class="calculator-container">
+    <div class="controls">
+        <h3>EMI Calculator</h3>
+
+        <!-- Principal -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>Loan Amount</label>
+                <div class="input-wrapper">
+                    <span class="prefix">₹</span>
+                    <input type="number" [ngModel]="principal()" (ngModelChange)="principal.set($event)">
+                </div>
+            </div>
+            <mat-slider min="10000" max="5000000" step="10000" showTickMarks discrete [displayWith]="formatLabel">
+                <input matSliderThumb [ngModel]="principal()" (ngModelChange)="principal.set($event)">
+            </mat-slider>
+        </div>
+
+        <!-- Interest Rate -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>Interest Rate (% p.a)</label>
+                <div class="input-wrapper">
+                    <input type="number" [ngModel]="rate()" (ngModelChange)="rate.set($event)">
+                    <span class="suffix">%</span>
+                </div>
+            </div>
+            <mat-slider min="1" max="25" step="0.1" showTickMarks discrete>
+                <input matSliderThumb [ngModel]="rate()" (ngModelChange)="rate.set($event)">
+            </mat-slider>
+        </div>
+
+        <!-- Tenure -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>Tenure (Months)</label>
+                <div class="input-wrapper">
+                    <input type="number" [ngModel]="tenure()" (ngModelChange)="tenure.set($event)">
+                    <span class="suffix">m</span>
+                </div>
+            </div>
+            <mat-slider min="6" max="120" step="1" showTickMarks discrete>
+                <input matSliderThumb [ngModel]="tenure()" (ngModelChange)="tenure.set($event)">
+            </mat-slider>
+        </div>
+    </div>
+
+    <!-- Results Panel -->
+    <div class="results">
+        <div class="chart-container">
+            <div class="donut-chart" [style.background]="pieStyle()">
+                <div class="inner-circle">
+                    <p>Monthly EMI</p>
+                    <h2>₹{{ emi() | number }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="breakdown">
+            <div class="legend-item">
+                <span class="dot blue"></span>
+                <span>Principal Amount</span>
+                <strong>₹{{ principal() | number }}</strong>
+            </div>
+            <div class="legend-item">
+                <span class="dot orange"></span>
+                <span>Total Interest</span>
+                <strong>₹{{ totalInterest() | number }}</strong>
+            </div>
+            <hr>
+            <div class="legend-item total">
+                <span>Total Payment</span>
+                <strong>₹{{ totalPayment() | number }}</strong>
+            </div>
+        </div>
+    </div>
+</div>

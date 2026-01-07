@@ -1,0 +1,107 @@
+<div class="main-content">
+  <div class="header-section">
+    <h1>Hello, {{ userName() }} 👋</h1>
+    <p class="subtitle">Here's what's happening with your loan applications today.</p>
+  </div>
+
+  <div class="dashboard-grid">
+
+    <!-- Quick Actions Section -->
+    <div class="section-title">
+      <h2>Quick Actions</h2>
+    </div>
+
+    <div class="actions-grid">
+      <mat-card class="action-card" routerLink="/loan-officer/loans">
+        <div class="action-icon primary-bg">
+          <mat-icon>assignment</mat-icon>
+        </div>
+        <div class="action-content">
+          <h3>Loan Applications</h3>
+          <p>Review new applications and manage existing loans</p>
+        </div>
+        <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+      </mat-card>
+
+      <mat-card class="action-card" routerLink="/reports">
+        <div class="action-icon accent-bg">
+          <mat-icon>assessment</mat-icon>
+        </div>
+        <div class="action-content">
+          <h3>View Reports</h3>
+          <p>Check EMI schedules, overdue payments, and analysis</p>
+        </div>
+        <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+      </mat-card>
+
+      <!-- Customer Summary -->
+      <mat-card class="action-card" routerLink="/loan-officer/customer-reports">
+        <div class="action-icon" style="background-color: #f59e0b; color: white;">
+          <mat-icon>people</mat-icon>
+        </div>
+        <div class="action-content">
+          <h3>Customer Summaries</h3>
+          <p>View loan portfolios and total exposure per customer</p>
+        </div>
+        <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+      </mat-card>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="section-title">
+      <h2>Overview</h2>
+    </div>
+
+    <div class="stats-grid">
+      <!-- Total -->
+      <mat-card class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Total Loans</span>
+          <mat-icon class="stat-icon gray">folder_shared</mat-icon>
+        </div>
+        <div class="stat-value">{{ total() }}</div>
+      </mat-card>
+
+      <!-- Applied -->
+      <mat-card class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Pending Approval</span>
+          <mat-icon class="stat-icon orange">hourglass_empty</mat-icon>
+        </div>
+        <div class="stat-value">{{ applied() }}</div>
+        <div class="stat-footer orange-text">Requires Action</div>
+      </mat-card>
+
+      <!-- Under Review -->
+      <mat-card class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Under Review</span>
+          <mat-icon class="stat-icon yellow">rate_review</mat-icon>
+        </div>
+        <div class="stat-value">{{ underReview() }}</div>
+        <div class="stat-footer yellow-text">In Progress</div>
+      </mat-card>
+
+      <!-- Active / Approved -->
+      <mat-card class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Active Loans</span>
+          <mat-icon class="stat-icon green">check_circle</mat-icon>
+        </div>
+        <div class="stat-value">{{ active() }}</div>
+        <div class="stat-footer green-text">Approved & Running</div>
+      </mat-card>
+
+      <!-- Rejected -->
+      <mat-card class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Rejected</span>
+          <mat-icon class="stat-icon red">cancel</mat-icon>
+        </div>
+        <div class="stat-value">{{ rejected() }}</div>
+        <div class="stat-footer red-text">Declined Applications</div>
+      </mat-card>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,236 @@
+.calculator-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 32px;
+    background: white;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    color: #64748b;
+    margin-top: -16px;
+    margin-bottom: 24px;
+    font-size: 13px;
+}
+
+.control-group {
+    margin-bottom: 24px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #475569;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-wrapper {
+    background: #f1f5f9;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    border: 1px solid transparent;
+    transition: border 0.2s;
+}
+
+.input-wrapper:focus-within {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.input-wrapper input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: right;
+    font-weight: 700;
+    color: #1e293b;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.results-panel {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-header h3 {
+    margin: 0 0 24px 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.comparison-grid {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.option-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.option-card.highlight {
+    border-color: #bfdbfe;
+    background: linear-gradient(to bottom, #eff6ff, white);
+}
+
+.option-badge {
+    position: absolute;
+    top: -10px;
+    background: #e2e8f0;
+    font-size: 10px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.option-badge.highlight {
+    background: #3b82f6;
+    color: white;
+}
+
+.option-card h4 {
+    margin: 12px 0 8px 0;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.big-number {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.2;
+}
+
+.text-blue {
+    color: #2563eb;
+}
+
+.sub-text {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.details-list {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.text-red {
+    color: #ef4444;
+}
+
+.vs-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cbd5e1;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 800;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: 3px solid #f8fafc;
+}
+
+
+.savings-banner {
+    margin-top: auto;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.savings-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.savings-content mat-icon {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.9;
+}
+
+.savings-content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.savings-content .label {
+    font-size: 12px;
+    opacity: 0.9;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.savings-content .amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .calculator-container {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-grid {
+        flex-direction: column;
+    }
+
+    .vs-divider {
+        top: auto;
+        bottom: -16px;
+        
+        display: none;
+        
+    }
+}

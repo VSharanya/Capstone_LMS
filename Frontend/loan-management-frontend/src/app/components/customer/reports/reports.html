@@ -1,0 +1,26 @@
+<div class="reports-container">
+    <div class="header">
+        <h2>My Reports & Tools</h2>
+        <p>View your loan history and calculate future EMIs.</p>
+    </div>
+
+    <mat-tab-group animationDuration="300ms" mat-stretch-tabs="false" mat-align-tabs="start">
+        <mat-tab label="Loan Statement">
+            <div class="tab-content">
+                <app-customer-loan-statement></app-customer-loan-statement>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="EMI Calculator">
+            <div class="tab-content">
+                <app-emi-calculator></app-emi-calculator>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="Foreclosure Calculator">
+            <div class="tab-content">
+                <app-foreclosure-calculator></app-foreclosure-calculator>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

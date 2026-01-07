@@ -1,0 +1,92 @@
+<div class="main-content">
+  <div class="page-header">
+    <div class="header-content">
+      <h1>User Management</h1>
+      <p class="subtitle">Manage system users, roles, and access.</p>
+    </div>
+  </div>
+
+  <div class="header">
+    <h2>All Users</h2>
+    <div class="filters">
+      <mat-form-field appearance="outline" class="search-field" subscriptSizing="dynamic">
+        <mat-label>Search Users</mat-label>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput (input)="onSearch($event)" />
+      </mat-form-field>
+
+      <button mat-stroked-button color="primary" (click)="exportToCsv()">
+        <mat-icon>download</mat-icon> Export CSV
+      </button>
+
+      <button mat-raised-button color="primary" (click)="openCreateDialog()">
+        <mat-icon>add</mat-icon> New User
+      </button>
+    </div>
+  </div>
+
+  <mat-card>
+    <table mat-table [dataSource]="dataSource" matSort>
+
+      <!-- Name -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let u">
+          <div class="user-cell">
+            <div class="avatar">{{ u.fullName.charAt(0).toUpperCase() }}</div>
+            <div class="info">
+              <span class="name">{{ u.fullName }}</span>
+              <small class="email">{{ u.email }}</small>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Email (Hidden/Merged above) -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header style="display: none;">Email</th>
+        <td mat-cell *matCellDef="let u" style="display: none;">{{ u.email }}</td>
+      </ng-container>
+
+      <!-- Role -->
+      <ng-container matColumnDef="role">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Role </th>
+        <td mat-cell *matCellDef="let u">
+          <span class="role-badge" [class.admin]="u.role==='Admin'" [class.officer]="u.role==='LoanOfficer'">
+            {{ u.role }}
+          </span>
+        </td>
+      </ng-container>
+
+      <!-- Income -->
+      <ng-container matColumnDef="income">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Annual Income </th>
+        <td mat-cell *matCellDef="let u">
+          <span *ngIf="u.annualIncome > 0">{{ u.annualIncome | currency:'INR' }}</span>
+          <span *ngIf="u.annualIncome === 0" class="text-gray">-</span>
+        </td>
+      </ng-container>
+
+      <!-- Status -->
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> Active </th>
+        <td mat-cell *matCellDef="let u">
+          <mat-slide-toggle [checked]="u.isActive" (change)="toggleStatus(u)" color="primary"
+            [disabled]="u.userId === currentUserId" matTooltip="Toggle User Access">
+          </mat-slide-toggle>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="['name', 'role', 'income', 'status']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['name', 'role', 'income', 'status']"></tr>
+
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4" style="text-align: center; padding: 20px;">
+          No users found matching "{{searchQuery()}}"
+        </td>
+      </tr>
+    </table>
+
+    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </mat-card>
+</div>

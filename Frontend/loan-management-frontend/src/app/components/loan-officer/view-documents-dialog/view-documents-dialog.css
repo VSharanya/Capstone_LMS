@@ -1,0 +1,119 @@
+:host {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.content-area {
+    min-height: 200px;
+    padding: 20px 0;
+}
+
+.loading-state {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+}
+
+.loading-state p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.empty-state {
+    text-align: center;
+    color: #999;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-state mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.doc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.doc-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.doc-item:hover {
+    background: #f9f9f9;
+}
+
+.doc-icon {
+    width: 40px;
+    height: 40px;
+    background: #eef2ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f51b5;
+}
+
+.doc-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-name {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.chip {
+    font-size: 0.75rem;
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+.date {
+    font-size: 0.75rem;
+    color: #888;
+}

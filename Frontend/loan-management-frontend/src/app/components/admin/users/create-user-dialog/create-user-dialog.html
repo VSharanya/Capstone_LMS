@@ -1,0 +1,37 @@
+<h2 mat-dialog-title>Create User</h2>
+
+<mat-dialog-content>
+    <form [formGroup]="form" class="dialog-form">
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Full Name</mat-label>
+            <input matInput formControlName="fullName" placeholder="Ex. John Doe">
+            <mat-error *ngIf="form.get('fullName')?.hasError('required')">Name is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email Address</mat-label>
+            <input matInput formControlName="email" placeholder="Ex. john@company.com">
+            <mat-error *ngIf="form.get('email')?.hasError('required')">Email is required</mat-error>
+            <mat-error *ngIf="form.get('email')?.hasError('email')">Invalid email format</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Role</mat-label>
+            <mat-select formControlName="role">
+                <mat-option *ngFor="let r of roles" [value]="r">
+                    {{ r }}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.get('role')?.hasError('required')">Role is required</mat-error>
+        </mat-form-field>
+
+    </form>
+</mat-dialog-content>
+
+<div mat-dialog-actions align="end">
+    <button mat-button (click)="cancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="submit()" [disabled]="form.invalid || loading">
+        Create User
+    </button>
+</div>

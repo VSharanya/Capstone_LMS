@@ -1,0 +1,52 @@
+<div class="main-content">
+    <div class="page-header">
+        <div class="header-content">
+            <h1>Outstanding Amounts</h1>
+            <p class="subtitle">Check pending dues for specific loan accounts.</p>
+        </div>
+    </div>
+
+    <div class="report-container">
+        <mat-card class="search-card">
+            <mat-card-header>
+                <mat-card-title>Find Loan Details</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content>
+                <div class="search-form">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label>Loan ID</mat-label>
+                        <mat-icon matPrefix>tag</mat-icon>
+                        <input matInput type="number" [(ngModel)]="loanId" (keyup.enter)="fetchOutstanding()"
+                            placeholder="Ex. 1001">
+                        <mat-hint>Enter the unique loan identifier</mat-hint>
+                    </mat-form-field>
+
+                    <button mat-raised-button color="primary" (click)="fetchOutstanding()" [disabled]="!loanId"
+                        style="height: 56px; margin-bottom: 20px;">
+                        <mat-icon>search</mat-icon> Check Status
+                    </button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Result Section -->
+        <mat-card class="result-card" *ngIf="result()">
+            <div class="result-content">
+                <div class="icon-circle">
+                    <mat-icon>account_balance_wallet</mat-icon>
+                </div>
+                <div class="info">
+                    <span class="label">Total Outstanding Due</span>
+                    <span class="amount">{{ result()?.outstandingAmount | currency:'INR' }}</span>
+                </div>
+            </div>
+        </mat-card>
+
+        <!-- Error/Empty State -->
+        <div *ngIf="error()" class="error-state">
+            <mat-icon color="warn">error_outline</mat-icon>
+            <p>{{ error() }}</p>
+        </div>
+    </div>
+</div>

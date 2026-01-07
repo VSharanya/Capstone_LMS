@@ -1,0 +1,77 @@
+.report-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+}
+
+.header p {
+    color: #64748b;
+    margin: 0;
+}
+
+.search-field {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+
+.table-container {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+}
+
+th.mat-header-cell {
+    font-weight: 600;
+    color: #475569;
+    background-color: #f8fafc;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td.mat-cell {
+    color: #334155;
+    font-size: 14px;
+    border-bottom-color: #f1f5f9;
+}
+
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.active {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+.badge.inactive {
+    background-color: #f1f5f9;
+    color: #94a3b8;
+}
+
+.debt-amount {
+    font-weight: 600;
+    color: #ef4444;
+    
+}

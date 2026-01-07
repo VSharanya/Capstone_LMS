@@ -1,0 +1,173 @@
+<div class="emi-container">
+
+  <div class="emi-header">
+    <div class="header-content">
+      <h2>EMI Schedule</h2>
+      <p class="subtitle">View upcoming payments and track your loan progress</p>
+    </div>
+
+    <div class="header-actions" *ngIf="canShowForeclosure()">
+      <button mat-raised-button class="foreclosure-btn" (click)="payFullOutstanding()" [disabled]="payingFull">
+        <mat-icon>verified</mat-icon>
+        {{ payingFull ? 'Processing...' : 'Pay Full Outstanding' }}
+      </button>
+    </div>
+  </div>
+
+  <!--  Loan Closed Banner -->
+  <div class="loan-closed-banner" *ngIf="!loading && isLoanClosed()">
+    <mat-icon>check_circle</mat-icon>
+    Loan is fully closed. No further EMIs pending.
+  </div>
+
+  <div *ngIf="loading" class="loading-state">
+    <mat-spinner diameter="40"></mat-spinner>
+    <p>Loading schedule...</p>
+  </div>
+
+  <div class="content-container" [hidden]="loading">
+    <mat-tab-group animationDuration="0ms">
+
+      <!-- TAB 1: SCHEDULE -->
+      <mat-tab label="EMI Schedule">
+        <!-- Search - Moved Outside -->
+        <mat-form-field appearance="outline" class="search-bar header-gap">
+          <mat-label>Search schedule...</mat-label>
+          <input matInput (keyup)="applyEmiFilter($event)">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        <div class="table-container">
+
+          <table mat-table matSort #emiSort="matSort" [dataSource]="dataSource" class="premium-table">
+
+            <!-- Installment -->
+            <ng-container matColumnDef="installment">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>#</th>
+              <td mat-cell *matCellDef="let e" class="text-secondary">{{ e.installmentNumber }}</td>
+            </ng-container>
+
+            <!-- Due Date -->
+            <ng-container matColumnDef="dueDate">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Due Date</th>
+              <td mat-cell *matCellDef="let e">
+                <div class="cell-content">
+                  {{ e.dueDate | date:'dd MMM yyyy' }}
+                </div>
+              </td>
+            </ng-container>
+
+            <!-- Amount -->
+            <ng-container matColumnDef="amount">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
+              <td mat-cell *matCellDef="let e" class="amount-cell">₹{{ e.emiAmount | number:'1.0-0' }}</td>
+            </ng-container>
+
+            <!-- Status -->
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+              <td mat-cell *matCellDef="let e">
+                <span class="status-badge" [class.paid]="e.isPaid" [class.unpaid]="!e.isPaid">
+                  {{ e.isPaid ? 'Paid' : 'Unpaid' }}
+                </span>
+              </td>
+            </ng-container>
+
+            <!-- Action -->
+            <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef>Action</th>
+              <td mat-cell *matCellDef="let e">
+                <button mat-flat-button color="primary" class="pay-btn" *ngIf="canPay(e)" (click)="payEmi(e)"
+                  [disabled]="payingId === e.emiId">
+                  {{ payingId === e.emiId ? 'Processing...' : 'Pay Now' }}
+                </button>
+
+                <span *ngIf="e.isPaid" class="paid-check">
+                  <mat-icon>check_circle</mat-icon> Paid
+                </span>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+
+          <mat-paginator #emiPaginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"
+            showFirstLastButtons></mat-paginator>
+
+          <div *ngIf="!dataSource.data.length" class="empty-state">
+            <mat-icon>receipt_long</mat-icon>
+            <p>No EMI schedule found.</p>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- TAB 2: HISTORY -->
+      <mat-tab label="Payment History">
+        <!-- Search - Moved Outside -->
+        <mat-form-field appearance="outline" class="search-bar header-gap">
+          <mat-label>Search history...</mat-label>
+          <input matInput (keyup)="applyHistoryFilter($event)">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        <div class="table-container">
+
+          <table mat-table [dataSource]="historyDataSource" matSort #historySort="matSort" class="premium-table">
+
+            <!-- ID -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Ref ID</th>
+              <td mat-cell *matCellDef="let p" class="text-secondary">#{{p.paymentId}}</td>
+            </ng-container>
+
+            <!-- Installment -->
+            <ng-container matColumnDef="installment">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Installment</th>
+              <td mat-cell *matCellDef="let p">#{{p.installmentNumber}}</td>
+            </ng-container>
+
+            <!-- Amount -->
+            <ng-container matColumnDef="amount">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Paid Amount</th>
+              <td mat-cell *matCellDef="let p" class="amount-cell success-text">+₹{{ p.paidAmount | number:'1.0-0' }}
+              </td>
+            </ng-container>
+
+            <!-- Date -->
+            <ng-container matColumnDef="date">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Payment Date</th>
+              <td mat-cell *matCellDef="let p">{{ p.paymentDate | date:'dd/MM/yyyy, h:mm a' }}</td>
+            </ng-container>
+
+            <!-- Mode -->
+            <ng-container matColumnDef="mode">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Mode</th>
+              <td mat-cell *matCellDef="let p">
+                <span class="mode-badge">{{ p.paymentMode }}</span>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="historyColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: historyColumns"></tr>
+          </table>
+
+          <mat-paginator #historyPaginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
+            [hidden]="!historyDataSource.data.length"></mat-paginator>
+
+          <div *ngIf="!historyDataSource.data.length" class="empty-state">
+            <mat-icon>history</mat-icon>
+            <p>No payment history available yet.</p>
+          </div>
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+  </div>
+
+  <div *ngIf="!loading && !dataSource.data.length" class="empty-state">
+    <mat-icon>receipt_long</mat-icon>
+    <p>No EMI schedule found for this loan.</p>
+  </div>
+
+</div>

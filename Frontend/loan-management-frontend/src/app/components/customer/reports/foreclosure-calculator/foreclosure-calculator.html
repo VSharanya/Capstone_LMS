@@ -1,0 +1,126 @@
+<div class="calculator-container">
+    <div class="controls">
+        <h3>Foreclosure Estimator</h3>
+        <p class="subtitle">Calculate expected savings by closing early.</p>
+
+        <!-- Loan Amount -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>Loan Amount</label>
+                <div class="input-wrapper">
+                    <span class="prefix">₹</span>
+                    <input type="number" [ngModel]="loanAmount()" (ngModelChange)="loanAmount.set($event)">
+                </div>
+            </div>
+            <mat-slider min="10000" max="5000000" step="10000" showTickMarks discrete [displayWith]="formatLabel">
+                <input matSliderThumb [ngModel]="loanAmount()" (ngModelChange)="loanAmount.set($event)">
+            </mat-slider>
+        </div>
+
+        <!-- Tenure -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>Total Tenure</label>
+                <div class="input-wrapper">
+                    <input type="number" [ngModel]="tenure()" (ngModelChange)="tenure.set($event)">
+                    <span class="suffix">months</span>
+                </div>
+            </div>
+            <mat-slider min="6" max="120" step="6" showTickMarks discrete>
+                <input matSliderThumb [ngModel]="tenure()" (ngModelChange)="tenure.set($event)">
+            </mat-slider>
+        </div>
+
+        <!-- Interest Rate -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>Interest Rate (% p.a)</label>
+                <div class="input-wrapper">
+                    <input type="number" [ngModel]="interestRate()" (ngModelChange)="interestRate.set($event)">
+                </div>
+            </div>
+            <mat-slider min="1" max="25" step="0.1" showTickMarks discrete>
+                <input matSliderThumb [ngModel]="interestRate()" (ngModelChange)="interestRate.set($event)">
+            </mat-slider>
+        </div>
+
+        <!-- EMIs Paid -->
+        <div class="control-group">
+            <div class="label-row">
+                <label>EMIs Paid So Far</label>
+                <div class="input-wrapper">
+                    <input type="number" [ngModel]="emisPaid()" (ngModelChange)="emisPaid.set($event)">
+                    <span class="suffix">paid</span>
+                </div>
+            </div>
+            <mat-slider min="0" [max]="tenure()" step="1" showTickMarks discrete>
+                <input matSliderThumb [ngModel]="emisPaid()" (ngModelChange)="emisPaid.set($event)">
+            </mat-slider>
+        </div>
+    </div>
+
+    <!-- Results Panel -->
+    <div class="results-panel">
+
+        <div class="summary-header">
+            <h3>Comparison</h3>
+        </div>
+
+        <div class="comparison-grid">
+
+            <!-- OPTION A: CONTINUE -->
+            <div class="option-card">
+                <div class="option-badge">Option 1</div>
+                <h4>Continue Paying EMI</h4>
+
+                <div class="big-number">₹{{ totalCostContinued() | number:'1.0-0' }}</div>
+                <div class="sub-text">Total Remaining Cost</div>
+
+                <div class="details-list">
+                    <div class="detail-row">
+                        <span>Remaining EMIs</span>
+                        <strong>{{ remainingEmisCount() }} months</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Monthly EMI</span>
+                        <strong>₹{{ monthlyEmi() | number:'1.0-0' }}</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vs-divider">VS</div>
+
+            <!-- OPTION B: FORECLOSE -->
+            <div class="option-card highlight">
+                <div class="option-badge highlight">Option 2</div>
+                <h4>Foreclose Now</h4>
+
+                <div class="big-number text-blue">₹{{ foreclosureAmount() | number:'1.0-0' }}</div>
+                <div class="sub-text">One-time Settlement</div>
+
+                <div class="details-list">
+                    <div class="detail-row">
+                        <span>Loan Amount</span>
+                        <span>₹{{ loanAmount() | number:'1.0-0' }}</span>
+                    </div>
+                    <div class="detail-row text-red">
+                        <span>(-) Principal Paid</span>
+                        <span>₹{{ principalPaidSoFar() | number:'1.0-0' }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Savings Banner -->
+        <div class="savings-banner" *ngIf="savings() > 0">
+            <div class="savings-content">
+                <mat-icon>savings</mat-icon>
+                <div class="text">
+                    <span class="label">You Save Interest Worth</span>
+                    <strong class="amount">₹{{ savings() | number:'1.0-0' }}</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

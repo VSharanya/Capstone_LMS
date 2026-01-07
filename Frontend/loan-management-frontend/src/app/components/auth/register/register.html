@@ -1,0 +1,98 @@
+<div class="register-container">
+  <mat-card class="register-card">
+
+    <h2 class="title" style="margin-bottom: 20px;">Register as Customer</h2>
+
+    <mat-stepper linear #stepper>
+      <!-- Step 1: Personal Details -->
+      <mat-step [stepControl]="personalDetailsForm" label="Personal Details">
+        <form [formGroup]="personalDetailsForm" class="step-form">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Full Name</mat-label>
+            <input matInput formControlName="fullName" />
+            <mat-error *ngIf="personalDetailsForm.get('fullName')?.hasError('required')">
+              Full name is required
+            </mat-error>
+            <mat-error *ngIf="personalDetailsForm.get('fullName')?.hasError('serverError')">
+              {{ personalDetailsForm.get('fullName')?.errors?.['serverError'] }}
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+            <mat-error *ngIf="personalDetailsForm.get('email')?.hasError('required')">
+              Email is required
+            </mat-error>
+            <mat-error *ngIf="personalDetailsForm.get('email')?.hasError('email')">
+              Enter a valid email
+            </mat-error>
+            <mat-error *ngIf="personalDetailsForm.get('email')?.hasError('serverError')">
+              {{ personalDetailsForm.get('email')?.errors?.['serverError'] }}
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password" />
+            <mat-error *ngIf="personalDetailsForm.get('password')?.hasError('required')">
+              Password is required
+            </mat-error>
+            <mat-error *ngIf="personalDetailsForm.get('password')?.hasError('minlength')">
+              Minimum 6 characters required
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password" formControlName="confirmPassword" />
+            <mat-error
+              *ngIf="personalDetailsForm.hasError('mismatch') && personalDetailsForm.get('confirmPassword')?.touched">
+              Passwords do not match
+            </mat-error>
+            <mat-error *ngIf="personalDetailsForm.get('confirmPassword')?.hasError('required')">
+              Please confirm your password
+            </mat-error>
+          </mat-form-field>
+
+          <div class="stepper-actions">
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+
+      <!-- Step 2: Financial Details -->
+      <mat-step [stepControl]="financialDetailsForm" label="Financial Details">
+        <form [formGroup]="financialDetailsForm" class="step-form">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Annual Income (₹)</mat-label>
+            <input matInput type="number" formControlName="annualIncome" />
+            <mat-error *ngIf="financialDetailsForm.get('annualIncome')?.hasError('required')">
+              Annual income is required
+            </mat-error>
+            <mat-error *ngIf="financialDetailsForm.get('annualIncome')?.hasError('min')">
+              Income must be greater than zero
+            </mat-error>
+            <mat-error *ngIf="financialDetailsForm.get('annualIncome')?.hasError('serverError')">
+              {{ financialDetailsForm.get('annualIncome')?.errors?.['serverError'] }}
+            </mat-error>
+          </mat-form-field>
+
+          <div class="stepper-actions">
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-raised-button color="accent" (click)="onSubmit()" [disabled]="isLoading">
+              {{ isLoading ? 'Registering...' : 'Complete Registration' }}
+            </button>
+          </div>
+        </form>
+      </mat-step>
+    </mat-stepper>
+
+    <!-- Login Link -->
+    <div class="login-link">
+      <span>Already have an account?</span>
+      <a routerLink="/auth/login">Login</a>
+    </div>
+
+  </mat-card>
+</div>

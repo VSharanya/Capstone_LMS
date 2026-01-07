@@ -1,0 +1,1393 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\loanservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\loanservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\reportservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\reportservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\notificationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\notificationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\loantypeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\loantypeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\emiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\emiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\documentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\documentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\loanmanagementsystem.tests\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8178D3-6228-4235-B378-3B2E6B833682}|LoanManagementSystem.Tests\\LoanManagementSystem.Tests.csproj|solutionrelative:loanmanagementsystem.tests\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\iloantypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\iloantypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\iemiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\iemiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\loantypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\loantypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\emiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\emiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\security\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:security\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\security\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:security\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\iloantyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\iloantyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\iloanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\iloanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\iemirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\iemirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\interfaces\\idocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\interfaces\\idocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\loantyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\loantyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\emirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\emirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\repositories\\implementations\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:repositories\\implementations\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\loantype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\loantype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\loandocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\loandocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\loanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\loanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\models\\emi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:models\\emi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\helpers\\roleconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:helpers\\roleconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\helpers\\loanstatusconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:helpers\\loanstatusconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\helpers\\emicalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:helpers\\emicalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\users\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\users\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\users\\updateuserstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\users\\updateuserstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\users\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\users\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\reports\\outstandingamountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\reports\\outstandingamountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\reports\\monthlyemireportrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\reports\\monthlyemireportrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\reports\\monthlyemireportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\reports\\monthlyemireportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\reports\\loansbystatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\reports\\loansbystatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\reports\\emioverduereportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\reports\\emioverduereportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\reports\\customerloansummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\reports\\customerloansummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\loans\\loantypeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\loans\\loantypeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\loans\\loantypecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\loans\\loantypecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\loans\\loanstatusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\loans\\loanstatusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\loans\\loanresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\loans\\loanresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\loans\\loanapplydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\loans\\loanapplydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\emi\\paymentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\emi\\paymentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\emi\\paymentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\emi\\paymentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\emi\\emiresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\emi\\emiresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\loantypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\loantypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\loanapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\loanapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\emicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\emicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery5.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery4.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|c:\\users\\adm\\onedrive\\desktop\\chubbtraining\\capstone\\code\\backend\\loanmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C40311DC-F50A-A6FE-6544-55AFD1CAD9BB}|LoanManagementSystem.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IReportService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IReportService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IReportService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T18:56:51.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmiServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\EmiServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\EmiServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\EmiServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\EmiServiceTests.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAswIUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:21:29.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoanServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\LoanServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\LoanServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\LoanServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\LoanServiceTests.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAADwv9cAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:23:20.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoanTypeServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\LoanTypeServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\LoanTypeServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\LoanTypeServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\LoanTypeServiceTests.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:24:56.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotificationServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\NotificationServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\NotificationServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\NotificationServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\NotificationServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:25:48.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\ReportServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\ReportServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\ReportServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\ReportServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:26:48.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DocumentServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\DocumentServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\DocumentServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\DocumentServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\DocumentServiceTests.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:40:25.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:39:34.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ILoanService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\ILoanService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\ILoanService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\ILoanService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\ILoanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:04:19.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEmiService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IEmiService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IEmiService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IEmiService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IEmiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:04:33.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IDocumentService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IDocumentService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IDocumentService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IDocumentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:39:06.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\ReportService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\ReportService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\ReportService.cs",
+              "RelativeToolTip": "Services\\Implementations\\ReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T18:56:56.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\NotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\NotificationService.cs",
+              "RelativeToolTip": "Services\\Implementations\\NotificationService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T18:28:26.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\AuthServiceTests.cs",
+              "RelativeDocumentMoniker": "LoanManagementSystem.Tests\\AuthServiceTests.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\LoanManagementSystem.Tests\\AuthServiceTests.cs",
+              "RelativeToolTip": "LoanManagementSystem.Tests\\AuthServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T22:48:49.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoanTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\LoanTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\LoanTypeService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\LoanTypeService.cs",
+              "RelativeToolTip": "Services\\Implementations\\LoanTypeService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAgwBMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:56:13.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoanService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\LoanService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\LoanService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\LoanService.cs",
+              "RelativeToolTip": "Services\\Implementations\\LoanService.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAqwCMBAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:05:17.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ILoanTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\ILoanTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\ILoanTypeService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\ILoanTypeService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\ILoanTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:55:38.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmiService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\EmiService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\EmiService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\EmiService.cs",
+              "RelativeToolTip": "Services\\Implementations\\EmiService.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAwwO4AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:05:30.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\DocumentService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\DocumentService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\DocumentService.cs",
+              "RelativeToolTip": "Services\\Implementations\\DocumentService.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAswE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T05:10:56.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:05:05.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:04:04.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Security\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "Security\\JwtTokenGenerator.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Security\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "Security\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:07:16.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Security\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "Security\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Security\\JwtSettings.cs",
+              "RelativeToolTip": "Security\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:07:03.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:01:04.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IReportRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IReportRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IReportRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IReportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T19:05:29.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IPaymentRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IPaymentRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IPaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T15:43:56.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\INotificationRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\INotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\INotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:29:21.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ILoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\ILoanRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ILoanRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\ILoanRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ILoanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:01:16.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IEmiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IEmiRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IEmiRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IEmiRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IEmiRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:01:30.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IDocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IDocumentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IDocumentRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\IDocumentRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IDocumentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:29:02.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\ReportRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\ReportRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\ReportRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\ReportRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwB8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:02:43.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\PaymentRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\PaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T15:45:49.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\NotificationRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\NotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\NotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T15:36:13.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ILoanTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\ILoanTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ILoanTypeRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Interfaces\\ILoanTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ILoanTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:53:08.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LoanTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\LoanTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\LoanTypeRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\LoanTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\LoanTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:54:22.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\LoanRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\LoanRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\LoanRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\LoanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:02:17.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EmiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\EmiRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\EmiRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\EmiRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\EmiRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:02:29.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:02:02.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\DocumentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\DocumentRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Repositories\\Implementations\\DocumentRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\DocumentRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:27:06.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\Notification.cs",
+              "RelativeToolTip": "Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:26:25.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoanType.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\LoanType.cs",
+              "RelativeDocumentMoniker": "Models\\LoanType.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\LoanType.cs",
+              "RelativeToolTip": "Models\\LoanType.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:54:57.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LoanDocument.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\LoanDocument.cs",
+              "RelativeDocumentMoniker": "Models\\LoanDocument.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\LoanDocument.cs",
+              "RelativeToolTip": "Models\\LoanDocument.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:26:00.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EMI.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\EMI.cs",
+              "RelativeDocumentMoniker": "Models\\EMI.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\EMI.cs",
+              "RelativeToolTip": "Models\\EMI.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:55:20.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:08:10.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Mappings\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Mappings\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Mappings\\AutoMapperProfile.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:07:41.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "RoleConstants.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Helpers\\RoleConstants.cs",
+              "RelativeDocumentMoniker": "Helpers\\RoleConstants.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Helpers\\RoleConstants.cs",
+              "RelativeToolTip": "Helpers\\RoleConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:24:42.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:55:32.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:54:43.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LoanStatusConstants.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Helpers\\LoanStatusConstants.cs",
+              "RelativeDocumentMoniker": "Helpers\\LoanStatusConstants.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Helpers\\LoanStatusConstants.cs",
+              "RelativeToolTip": "Helpers\\LoanStatusConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:24:34.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UpdateUserStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Users\\UpdateUserStatusDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Users\\UpdateUserStatusDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Users\\UpdateUserStatusDto.cs",
+              "RelativeToolTip": "DTOs\\Users\\UpdateUserStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T10:29:12.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LoanApplication.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\LoanApplication.cs",
+              "RelativeDocumentMoniker": "Models\\LoanApplication.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Models\\LoanApplication.cs",
+              "RelativeToolTip": "Models\\LoanApplication.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAmwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:55:08.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Users\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Users\\CreateUserDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Users\\CreateUserDto.cs",
+              "RelativeToolTip": "DTOs\\Users\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T16:41:55.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OutstandingAmountDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\OutstandingAmountDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Reports\\OutstandingAmountDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\OutstandingAmountDto.cs",
+              "RelativeToolTip": "DTOs\\Reports\\OutstandingAmountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:59:13.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "MonthlyEmiReportRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\MonthlyEmiReportRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Reports\\MonthlyEmiReportRequestDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\MonthlyEmiReportRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Reports\\MonthlyEmiReportRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T10:40:53.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "MonthlyEmiReportDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\MonthlyEmiReportDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Reports\\MonthlyEmiReportDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\MonthlyEmiReportDto.cs",
+              "RelativeToolTip": "DTOs\\Reports\\MonthlyEmiReportDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:59:26.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Users\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Users\\UserResponseDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Users\\UserResponseDto.cs",
+              "RelativeToolTip": "DTOs\\Users\\UserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T14:32:01.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "EmiCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Helpers\\EmiCalculator.cs",
+              "RelativeDocumentMoniker": "Helpers\\EmiCalculator.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Helpers\\EmiCalculator.cs",
+              "RelativeToolTip": "Helpers\\EmiCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T10:06:07.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "LoansByStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\LoansByStatusDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Reports\\LoansByStatusDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\LoansByStatusDto.cs",
+              "RelativeToolTip": "DTOs\\Reports\\LoansByStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:58:58.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "EmiOverdueReportDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\EmiOverdueReportDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Reports\\EmiOverdueReportDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\EmiOverdueReportDto.cs",
+              "RelativeToolTip": "DTOs\\Reports\\EmiOverdueReportDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T19:34:25.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "CustomerLoanSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\CustomerLoanSummaryDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Reports\\CustomerLoanSummaryDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Reports\\CustomerLoanSummaryDto.cs",
+              "RelativeToolTip": "DTOs\\Reports\\CustomerLoanSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:22:47.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "LoanTypeCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanTypeCreateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Loans\\LoanTypeCreateDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanTypeCreateDto.cs",
+              "RelativeToolTip": "DTOs\\Loans\\LoanTypeCreateDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:35:10.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "LoanStatusUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanStatusUpdateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Loans\\LoanStatusUpdateDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanStatusUpdateDto.cs",
+              "RelativeToolTip": "DTOs\\Loans\\LoanStatusUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:58:25.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "LoanResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Loans\\LoanResponseDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanResponseDto.cs",
+              "RelativeToolTip": "DTOs\\Loans\\LoanResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:58:38.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "LoanApplyDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanApplyDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Loans\\LoanApplyDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanApplyDto.cs",
+              "RelativeToolTip": "DTOs\\Loans\\LoanApplyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:58:11.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PaymentRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\EMI\\PaymentRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\EMI\\PaymentRequestDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\EMI\\PaymentRequestDto.cs",
+              "RelativeToolTip": "DTOs\\EMI\\PaymentRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:20:34.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "PaymentResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\EMI\\PaymentResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\EMI\\PaymentResponseDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\EMI\\PaymentResponseDto.cs",
+              "RelativeToolTip": "DTOs\\EMI\\PaymentResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:20:35.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "LoanTypeUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanTypeUpdateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Loans\\LoanTypeUpdateDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Loans\\LoanTypeUpdateDto.cs",
+              "RelativeToolTip": "DTOs\\Loans\\LoanTypeUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T16:24:42.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAQwGcBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:54:15.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAIwBIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:54:03.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T10:49:25.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "Controllers\\ReportsController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:46:31.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Controllers\\NotificationController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T21:50:13.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Auth\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\Auth\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:56:37.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Auth\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeToolTip": "DTOs\\Auth\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:56:50.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "EmiResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\EMI\\EmiResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\EMI\\EmiResponseDto.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\DTOs\\EMI\\EmiResponseDto.cs",
+              "RelativeToolTip": "DTOs\\EMI\\EmiResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:57:53.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "LoanTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\LoanTypesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoanTypesController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\LoanTypesController.cs",
+              "RelativeToolTip": "Controllers\\LoanTypesController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwBYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:16:28.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "LoanApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\LoanApplicationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoanApplicationsController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\LoanApplicationsController.cs",
+              "RelativeToolTip": "Controllers\\LoanApplicationsController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:45:49.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "EmiController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\EmiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmiController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\EmiController.cs",
+              "RelativeToolTip": "Controllers\\EmiController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T10:19:36.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "DocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\DocumentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DocumentsController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\DocumentsController.cs",
+              "RelativeToolTip": "Controllers\\DocumentsController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAkwGsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T05:08:29.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:10:40.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAewKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T16:50:28.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "SQLQuery5.sql",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery5.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\SQLQuery5.sql",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery5.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\SQLQuery5.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-31T18:52:30.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "SQLQuery4.sql",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery4.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\SQLQuery4.sql",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery4.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\SQLQuery4.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-31T16:59:26.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "SQLQuery2.sql",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery2.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\SQLQuery2.sql",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery2.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\SQLQuery2.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-31T16:02:32.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\SQLQuery1.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-31T14:27:01.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\adm\\OneDrive\\Desktop\\ChubbTraining\\Capstone\\Code\\Backend\\LoanManagementSystem.Api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T06:42:59.766Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

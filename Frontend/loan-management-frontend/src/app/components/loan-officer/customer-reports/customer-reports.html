@@ -1,0 +1,73 @@
+<div class="report-container">
+    <div class="header">
+        <h2>Customer Loan Summaries</h2>
+        <p>Overview of customer portfolios and risk exposure.</p>
+    </div>
+
+    <mat-form-field appearance="outline" class="search-field">
+        <mat-label>Search</mat-label>
+        <input matInput (keyup)="applyFilter($event)">
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <div class="table-container mat-elevation-z2">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- Customer ID -->
+            <ng-container matColumnDef="customerId">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+                <td mat-cell *matCellDef="let row"> #{{row.customerId}} </td>
+            </ng-container>
+
+            <!-- Customer Name -->
+            <ng-container matColumnDef="customerName">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer </th>
+                <td mat-cell *matCellDef="let row"> {{row.customerName}} </td>
+            </ng-container>
+
+            <!-- Email -->
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+            </ng-container>
+
+            <!-- Total Loans -->
+            <ng-container matColumnDef="totalLoans">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Applications </th>
+                <td mat-cell *matCellDef="let row"> {{row.totalLoans}} </td>
+            </ng-container>
+
+            <!-- Active Loans -->
+            <ng-container matColumnDef="activeLoans">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Active </th>
+                <td mat-cell *matCellDef="let row">
+                    <span class="badge active" *ngIf="row.activeLoans > 0">{{row.activeLoans}}</span>
+                    <span class="badge inactive" *ngIf="row.activeLoans === 0">0</span>
+                </td>
+            </ng-container>
+
+            <!-- Total Amount -->
+            <ng-container matColumnDef="totalLoanAmount">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Borrowed </th>
+                <td mat-cell *matCellDef="let row"> {{row.totalLoanAmount | currency:'INR'}} </td>
+            </ng-container>
+
+            <!-- Total Outstanding -->
+            <ng-container matColumnDef="totalOutstanding">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Outstanding Debt </th>
+                <td mat-cell *matCellDef="let row" class="debt-amount"> {{row.totalOutstanding | currency:'INR'}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <!-- Row shown when there is no matching data. -->
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No data matching the filter</td>
+            </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" showFirstLastButtons
+            aria-label="Select page of users"></mat-paginator>
+    </div>
+</div>

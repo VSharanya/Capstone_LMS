@@ -1,0 +1,127 @@
+<div class="main-content">
+    <div class="page-header">
+        <div class="header-content">
+            <h1>Monthly EMI Collections</h1>
+            <p class="subtitle">Track EMI payments and pending dues for a specific month.</p>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <mat-card class="filter-card">
+        <div class="filters">
+            <mat-form-field appearance="outline" class="filter-field" subscriptSizing="dynamic">
+                <mat-label>Month</mat-label>
+                <mat-select [(ngModel)]="selectedMonth">
+                    <mat-option *ngFor="let m of months" [value]="m.value">{{m.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="filter-field" subscriptSizing="dynamic">
+                <mat-label>Year</mat-label>
+                <mat-select [(ngModel)]="selectedYear">
+                    <mat-option *ngFor="let y of years" [value]="y">{{y}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" (click)="fetchReport()" style="height: 56px;">
+                <mat-icon>bar_chart</mat-icon> View Report
+            </button>
+        </div>
+    </mat-card>
+
+    <!-- Report Content -->
+    <div class="report-content" *ngIf="data().length">
+
+        <!-- Stats / Visuals -->
+        <div class="visuals">
+            <mat-card class="stats-card">
+                <div class="bar-chart-container">
+                    <div class="bar-labels">
+                        <div class="label-item">
+                            <span class="dot paid-dot"></span>
+                            <span class="stat-text">
+                                Paid: <strong>{{ stats().paid | currency:'INR' }}</strong>
+                                <span class="pct">({{ stats().paidPct | number:'1.0-1' }}%)</span>
+                            </span>
+                        </div>
+                        <div class="label-item">
+                            <span class="dot pending-dot"></span>
+                            <span class="stat-text">
+                                Pending: <strong>{{ stats().pending | currency:'INR' }}</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="bar-segment paid-segment" [style.width.%]="stats().paidPct">
+                            <mat-icon *ngIf="stats().paidPct > 5" class="segment-icon">check</mat-icon>
+                        </div>
+                        <div class="bar-segment pending-segment" [style.width.%]="100 - stats().paidPct">
+                            <mat-icon *ngIf="(100 - stats().paidPct) > 5" class="segment-icon">schedule</mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+
+        <!-- Data Table -->
+        <mat-card class="table-card">
+            <div class="table-header">
+                <h3>Details</h3>
+                <mat-form-field appearance="outline" class="search-field" subscriptSizing="dynamic">
+                    <mat-label>Search Report</mat-label>
+                    <mat-icon matPrefix>search</mat-icon>
+                    <input matInput (keyup)="applyFilter($event)" placeholder="Search by id, customer, amount...">
+                </mat-form-field>
+            </div>
+
+            <table mat-table [dataSource]="dataSource" matSort>
+
+                <ng-container matColumnDef="loanId">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Loan ID </th>
+                    <td mat-cell *matCellDef="let r"> <span class="mono-badge">#{{r.loanId}}</span> </td>
+                </ng-container>
+
+                <ng-container matColumnDef="customer">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer </th>
+                    <td mat-cell *matCellDef="let r" style="font-weight: 500;"> {{r.customerName}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="dueDate">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Due Date </th>
+                    <td mat-cell *matCellDef="let r"> {{r.dueDate | date:'dd MMM yyyy'}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="amount">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> EMI Amount </th>
+                    <td mat-cell *matCellDef="let r"> {{r.emiAmount | currency:'INR'}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+                    <td mat-cell *matCellDef="let r">
+                        <span class="status-badge" [class.paid]="r.isPaid" [class.pending]="!r.isPaid">
+                            {{r.isPaid ? 'Paid' : 'Pending'}}
+                        </span>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                <tr class="mat-row" *matNoDataRow>
+                    <td class="mat-cell" colspan="5" style="text-align: center; padding: 24px; color: #64748b;">
+                        No matching records found.
+                    </td>
+                </tr>
+            </table>
+
+            <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        </mat-card>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!data().length && searched" class="empty-state">
+        <mat-icon>event_busy</mat-icon>
+        <p>No records found for {{getActionMonthName()}} {{selectedYear}}.</p>
+    </div>
+</div>

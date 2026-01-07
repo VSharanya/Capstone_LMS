@@ -1,0 +1,45 @@
+.reports-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.header p {
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.tab-content {
+    margin-top: 24px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+::ng-deep .mat-mdc-tab-group {
+    --mdc-tab-indicator-active-indicator-color: #3b82f6;
+    --mat-tab-header-active-label-text-color: #3b82f6;
+    --mat-tab-header-active-focus-label-text-color: #3b82f6;
+}

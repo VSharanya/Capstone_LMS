@@ -1,0 +1,54 @@
+<div class="report-section">
+    <h3>Active vs Closed Loans</h3>
+
+    <div class="cards-container">
+        <!-- Active Loans Card -->
+        <mat-card class="stat-card active-card">
+            <mat-card-content>
+                <div class="icon-box active-icon">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="stat-info">
+                    <span class="label">Active Loans</span>
+                    <span class="value">{{ activeCount() }}</span>
+                    <span class="desc">Currently ongoing</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Closed Loans Card -->
+        <mat-card class="stat-card closed-card">
+            <mat-card-content>
+                <div class="icon-box closed-icon">
+                    <mat-icon>check_circle</mat-icon>
+                </div>
+                <div class="stat-info">
+                    <span class="label">Closed Loans</span>
+                    <span class="value">{{ closedCount() }}</span>
+                    <span class="desc">Fully repaid</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <!-- Comparison Visualization -->
+    <mat-card class="comparison-card">
+        <mat-card-header>
+            <mat-card-title>Ratio Analysis</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="ratio-box">
+                <div class="ratio-labels">
+                    <span class="active-label">Active ({{ activePercentage() | number:'1.0-0' }}%)</span>
+                    <span class="closed-label">Closed ({{ 100 - activePercentage() | number:'1.0-0' }}%)</span>
+                </div>
+                <mat-progress-bar mode="determinate" [value]="activePercentage()"
+                    class="custom-progress"></mat-progress-bar>
+                <p class="insight">
+                    You have <strong>{{ activeCount() }}</strong> active loans compared to <strong>{{ closedCount()
+                        }}</strong> closed ones.
+                </p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

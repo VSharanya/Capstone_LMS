@@ -1,0 +1,84 @@
+<div class="sidebar-container" *ngIf="isLoggedIn()"> <!-- Only show if logged in -->
+
+    <div class="brand">
+        <div class="logo-icon">
+            <mat-icon>account_balance</mat-icon>
+        </div>
+        <span class="logo-text">LoanSphere</span>
+    </div>
+
+    <mat-nav-list>
+
+        <!-- Admin Links -->
+        <ng-container *ngIf="role() === 'Admin'">
+            <a mat-list-item routerLink="/admin/dashboard" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>dashboard</mat-icon>
+                <span matListItemTitle>Dashboard</span>
+            </a>
+            <a mat-list-item routerLink="/admin/users" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>people</mat-icon>
+                <span matListItemTitle>Users</span>
+            </a>
+
+            <a mat-list-item routerLink="/admin/loan-types" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>category</mat-icon>
+                <span matListItemTitle>Loan Types</span>
+            </a>
+
+        </ng-container>
+
+        <!-- Loan Officer Links -->
+        <ng-container *ngIf="role() === 'LoanOfficer'">
+            <a mat-list-item routerLink="/loan-officer/dashboard" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>dashboard</mat-icon>
+                <span matListItemTitle>Dashboard</span>
+            </a>
+            <a mat-list-item routerLink="/loan-officer/loans" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>folder_open</mat-icon>
+                <span matListItemTitle>Loans</span>
+            </a>
+            <a mat-list-item routerLink="/reports" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>analytics</mat-icon>
+                <span matListItemTitle>Reports</span>
+            </a>
+        </ng-container>
+
+        <!-- Customer Links -->
+        <ng-container *ngIf="role() === 'Customer'">
+            <a mat-list-item routerLink="/customer/dashboard" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>dashboard</mat-icon>
+                <span matListItemTitle>Dashboard</span>
+            </a>
+            <a mat-list-item routerLink="/customer/apply-loan" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>add_circle_outline</mat-icon>
+                <span matListItemTitle>Apply Loan</span>
+            </a>
+            <a mat-list-item routerLink="/customer/my-loans" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>list_alt</mat-icon>
+                <span matListItemTitle>My Loans</span>
+            </a>
+            <a mat-list-item routerLink="/customer/reports" routerLinkActive="active-link">
+                <mat-icon matListItemIcon>analytics</mat-icon>
+                <span matListItemTitle>Reports</span>
+            </a>
+        </ng-container>
+
+    </mat-nav-list>
+
+    <div class="spacer"></div>
+
+    <div class="user-profile">
+        <div class="user-info">
+            <p class="name">{{ currentUser() }}</p>
+            <p class="role">{{ role() }}</p>
+        </div>
+
+        <div class="actions" style="display: flex; gap: 8px; align-items: center;">
+            <app-notification-bell></app-notification-bell>
+            <button mat-icon-button color="warn" (click)="logout()" matTooltip="Logout">
+                <mat-icon>logout</mat-icon>
+            </button>
+        </div>
+    </div>
+
+</div>

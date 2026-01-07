@@ -1,0 +1,41 @@
+<div class="dialog-header">
+    <h2 mat-dialog-title>Upload Documents</h2>
+    <button mat-icon-button mat-dialog-close tabindex="-1">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<mat-dialog-content>
+    <div class="upload-wrapper">
+        <p class="instruction-text">Please upload your identity or income proof (PDF, JPG, PNG).</p>
+
+        <div class="drop-zone" [class.has-file]="!!selectedFile">
+            <div class="icon-wrapper">
+                <mat-icon>{{ selectedFile ? 'check_circle' : 'cloud_upload' }}</mat-icon>
+            </div>
+
+            <div class="drop-text" *ngIf="!selectedFile">
+                <span>Click to browse</span>
+            </div>
+
+            <div class="file-info" *ngIf="selectedFile">
+                <span class="file-name">{{ selectedFile.name }}</span>
+                <span class="file-size">{{ (selectedFile.size / 1024 / 1024) | number:'1.2-2' }} MB</span>
+            </div>
+
+            <input type="file" (change)="onFileSelected($event)" accept=".pdf,.jpg,.png,.jpeg" class="file-input">
+        </div>
+
+        <div class="progress-section" *ngIf="uploading">
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            <span class="uploading-text">Uploading securely...</span>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close [disabled]="uploading">Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="!selectedFile || uploading" (click)="upload()">
+        {{ uploading ? 'Uploading...' : 'Upload Now' }}
+    </button>
+</mat-dialog-actions>

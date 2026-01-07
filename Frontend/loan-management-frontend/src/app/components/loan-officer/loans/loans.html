@@ -1,0 +1,130 @@
+<div class="loans-container">
+
+    <div class="header">
+        <h2>Loan Applications</h2>
+
+        <div class="filters-container">
+            <mat-form-field appearance="outline" class="search-field">
+                <mat-label>Search</mat-label>
+                <input matInput (keyup)="applyFilter($event)">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="status-filter">
+                <mat-label>Filter by Status</mat-label>
+                <mat-select [value]="selectedStatus" (selectionChange)="onStatusChange($event.value)">
+                    <mat-option value="Applied">Applied</mat-option>
+                    <mat-option value="Under Review">Under Review</mat-option>
+                    <mat-option value="Active">Active</mat-option>
+                    <mat-option value="Rejected">Rejected</mat-option>
+                    <mat-option value="Closed">Closed</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" matSort class="loans-table">
+
+        <!-- Loan ID -->
+        <ng-container matColumnDef="loanId">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+            <td mat-cell *matCellDef="let row"> #{{row.loanId}} </td>
+        </ng-container>
+
+        <!-- Customer -->
+        <ng-container matColumnDef="customer">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer </th>
+            <td mat-cell *matCellDef="let row">
+                <div class="user-info">
+                    <span class="user-name">{{row.customerName}}</span>
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- Annual Income -->
+        <ng-container matColumnDef="annualIncome">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Annual Income </th>
+            <td mat-cell *matCellDef="let row" class="income-cell"> {{row.annualIncome | currency:'INR'}} </td>
+        </ng-container>
+
+        <!-- Loan Type -->
+        <ng-container matColumnDef="loanType">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Loan Type </th>
+            <td mat-cell *matCellDef="let row"> {{row.loanType}} </td>
+        </ng-container>
+
+        <!-- Amount -->
+        <ng-container matColumnDef="amount">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount </th>
+            <td mat-cell *matCellDef="let row" style="font-weight: 500;"> {{row.loanAmount | currency:'INR'}} </td>
+        </ng-container>
+
+        <!-- Tenure -->
+        <ng-container matColumnDef="tenure">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Tenure </th>
+            <td mat-cell *matCellDef="let row"> {{row.tenureMonths}} months </td>
+        </ng-container>
+
+        <!-- Status -->
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+            <td mat-cell *matCellDef="let row">
+                <span class="status-badge" [ngClass]="{
+                    'blue': row.status === 'Applied',
+                    'yellow': row.status === 'Under Review',
+                    'green': row.status === 'Active' || row.status === 'Approved',
+                    'red': row.status === 'Rejected',
+                    'gray': row.status === 'Closed'
+                }">{{row.status}}</span>
+            </td>
+        </ng-container>
+
+        <!-- Applied On -->
+        <ng-container matColumnDef="appliedOn">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Applied On </th>
+            <td mat-cell *matCellDef="let row"> {{row.appliedDate | date:'dd/MM/yyyy'}} </td>
+        </ng-container>
+
+        <!-- Actions -->
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef> Actions </th>
+            <td mat-cell *matCellDef="let row">
+                <div class="actions-cell">
+                    <!-- View Documents (Always visible) -->
+                    <button mat-icon-button color="primary" (click)="viewDocuments(row.loanId)"
+                        matTooltip="View Documents" class="small-icon-btn">
+                        <mat-icon>description</mat-icon>
+                    </button>
+
+                    <!-- View EMI (Active/Closed) -->
+                    <button *ngIf="row.status === 'Active' || row.status === 'Closed'" mat-stroked-button
+                        color="primary" class="small-btn" (click)="viewEMI(row.loanId)">
+                        View EMI
+                    </button>
+
+                    <!-- Verify/Reject (Applied) -->
+                    <ng-container *ngIf="row.status === 'Applied'">
+                        <button mat-flat-button color="accent" class="small-btn"
+                            (click)="verifyLoan(row.loanId)">Verify</button>
+                        <button mat-stroked-button color="warn" class="small-btn"
+                            (click)="reject(row.loanId)">Reject</button>
+                    </ng-container>
+
+                    <!-- Approve/Reject (Under Review) -->
+                    <ng-container *ngIf="row.status === 'Under Review'">
+                        <button mat-flat-button color="primary" class="small-btn"
+                            (click)="approve(row.loanId)">Approve</button>
+                        <button mat-stroked-button color="warn" class="small-btn"
+                            (click)="reject(row.loanId)">Reject</button>
+                    </ng-container>
+                </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+
+</div>

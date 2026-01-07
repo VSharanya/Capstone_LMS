@@ -1,0 +1,99 @@
+<div class="main-content">
+    <div class="page-header">
+        <div class="header-content">
+            <h1>Loan Application Registry</h1>
+            <p class="subtitle">View and monitor all loan applications.</p>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>Review Loan Applications</h2>
+        <div class="filters">
+            <mat-form-field appearance="outline" class="search-field">
+                <mat-label>Search Loans</mat-label>
+                <mat-icon matPrefix>search</mat-icon>
+                <input matInput (input)="onSearch($event)" placeholder="Name, Type, or ID">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Status</mat-label>
+                <mat-select [value]="selectedStatus()" (selectionChange)="onStatusChange($event.value)">
+                    <mat-option value="All">All Applications</mat-option>
+                    <mat-option value="Applied">Applied</mat-option>
+                    <mat-option value="Under Review">Under Review</mat-option>
+                    <mat-option value="Active">Active</mat-option>
+                    <mat-option value="Rejected">Rejected</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <mat-card>
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- Loan ID -->
+            <ng-container matColumnDef="loanId">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+                <td mat-cell *matCellDef="let row"> #{{row.loanId}} </td>
+            </ng-container>
+
+            <!-- Customer -->
+            <ng-container matColumnDef="customer">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer </th>
+                <td mat-cell *matCellDef="let row">
+                    {{row.customerName}} <br>
+                    <small class="text-gray">{{row.customerEmail}}</small>
+                </td>
+            </ng-container>
+
+            <!-- Loan Type -->
+            <ng-container matColumnDef="loanType">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Type </th>
+                <td mat-cell *matCellDef="let row"> {{row.loanType}} </td>
+            </ng-container>
+
+            <!-- Amount -->
+            <ng-container matColumnDef="amount">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount </th>
+                <td mat-cell *matCellDef="let row"> {{row.loanAmount | currency:'INR'}} </td>
+            </ng-container>
+
+            <!-- Status -->
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+                <td mat-cell *matCellDef="let row">
+                    <span class="status-badge" [ngClass]="getStatusClass(row.status)">
+                        {{row.status}}
+                    </span>
+                </td>
+            </ng-container>
+
+            <!-- Date -->
+            <ng-container matColumnDef="appliedOn">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Applied On </th>
+                <td mat-cell *matCellDef="let row"> {{row.appliedDate | date}} </td>
+            </ng-container>
+
+            <!-- Actions -->
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef> Status Details </th>
+                <td mat-cell *matCellDef="let row">
+                    <button mat-stroked-button color="primary" (click)="viewDetails(row)">
+                        View Details
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="7" style="text-align: center; padding: 20px;">
+                    No loans found with status "{{selectedStatus()}}"
+                </td>
+            </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </mat-card>
+</div>

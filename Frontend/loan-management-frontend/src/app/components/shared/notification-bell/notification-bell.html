@@ -1,0 +1,37 @@
+<div class="notification-wrapper">
+    <button mat-icon-button (click)="toggleOpen()">
+        <mat-icon [matBadge]="unreadCount()" [matBadgeHidden]="unreadCount() === 0" matBadgeColor="warn"
+            matBadgeSize="small">notifications</mat-icon>
+    </button>
+
+    <div class="notification-dropdown" *ngIf="isOpen()">
+        <div class="header">
+            <h3>Notifications</h3>
+            <button mat-button color="primary" (click)="markAllRead()" *ngIf="unreadCount() > 0">Mark all read</button>
+        </div>
+
+        <div class="list">
+            <div *ngFor="let n of notifications()" class="item" [class.unread]="!n.isRead" (click)="markRead(n.id)">
+                <div class="unread-dot" *ngIf="!n.isRead"></div>
+                <div class="icon">
+                    <mat-icon [ngClass]="n.type.toLowerCase()">
+                        {{ n.type === 'Success' ? 'check_circle' : n.type === 'Error' ? 'error' : 'info' }}
+                    </mat-icon>
+                </div>
+                <div class="content">
+                    <p class="message" [class.bold]="!n.isRead">{{ n.message }}</p>
+                    <span class="time">{{ n.createdAt | date:'MMM d, h:mm a':'+0530' }} IST</span>
+                </div>
+                <div class="actions" *ngIf="!n.isRead">
+                    <button mat-icon-button color="primary" (click)="$event.stopPropagation(); markRead(n.id)"
+                        matTooltip="Mark as read" style="width: 32px; height: 32px; line-height: 32px;">
+                        <mat-icon style="font-size: 18px; width: 18px; height: 18px;">mark_email_read</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <div *ngIf="notifications().length === 0" class="empty">
+                No notifications
+            </div>
+        </div>
+    </div>
+</div>

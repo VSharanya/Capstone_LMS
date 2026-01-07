@@ -1,0 +1,124 @@
+.report-section {
+    padding: 16px 0;
+}
+
+h3 {
+    margin-bottom: 24px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1) !important;
+    background: white;
+}
+
+.stat-card mat-card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px !important;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box mat-icon {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.active-icon {
+    background: #ecfdf5;
+    color: #10b981;
+}
+
+.closed-icon {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.desc {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+
+.comparison-card {
+    border-radius: 12px !important;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1) !important;
+    border: 1px solid #e2e8f0;
+}
+
+.ratio-box {
+    padding-top: 10px;
+}
+
+.ratio-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.active-label {
+    color: #10b981;
+}
+
+.closed-label {
+    color: #64748b;
+}
+
+.custom-progress {
+    height: 12px !important;
+    border-radius: 6px;
+}
+
+
+::ng-deep .custom-progress .mat-progress-bar-fill::after {
+    background-color: #10b981 !important;
+}
+
+::ng-deep .custom-progress .mat-progress-bar-buffer {
+    background-color: #f1f5f9 !important;
+}
+
+.insight {
+    margin-top: 16px;
+    color: #475569;
+    font-size: 14px;
+}

@@ -1,0 +1,118 @@
+.statement-container {
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header-row h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #1e293b;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 14px;
+    margin: 4px 0 0 0;
+}
+
+.search-field {
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.table-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+table {
+    width: 100%;
+}
+
+.font-medium {
+    font-weight: 500;
+    color: #334155;
+}
+
+
+.id-badge {
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+
+.highlight-green {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.highlight-red {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+
+.status-pill {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-pill.active {
+    background: #dcfce7;
+    color: #15803d;
+    border: 1px solid #86efac;
+}
+
+.status-pill.approved {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #93c5fd;
+}
+
+.status-pill.closed {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+}
+
+.status-pill.rejected {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
+
+.mat-mdc-header-cell {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+@media print {
+
+    .header-row button,
+    .search-field {
+        display: none;
+    }
+
+    .statement-container {
+        box-shadow: none;
+        border: none;
+    }
+}

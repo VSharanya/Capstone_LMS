@@ -1,0 +1,110 @@
+:host {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    
+    padding: 20px;
+    height: 100%;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.upload-wrapper {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.instruction-text {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    position: relative;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background: #fafafa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.drop-zone:hover {
+    border-color: #3f51b5;
+    background: #f0f4ff;
+}
+
+.drop-zone.has-file {
+    border-color: #4caf50;
+    background: #e8f5e9;
+    border-style: solid;
+}
+
+.icon-wrapper mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.has-file .icon-wrapper mat-icon {
+    color: #4caf50;
+}
+
+.drop-text {
+    font-weight: 500;
+    color: #3f51b5;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.file-size {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.progress-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.uploading-text {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}

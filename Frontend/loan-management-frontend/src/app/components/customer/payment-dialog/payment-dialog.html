@@ -1,0 +1,52 @@
+<h2 mat-dialog-title>{{ data.title || 'Make Payment' }}</h2>
+
+<mat-dialog-content>
+    <!-- Card Header -->
+    <div class="payment-summary">
+        <p>{{ data.subtitle || 'Total EMI Due' }}</p>
+        <div *ngIf="data.amount !== undefined">
+            <h3>₹{{ data.amount | number:'1.2-2' }}</h3>
+        </div>
+        <div *ngIf="data.amount === undefined">
+            <h3>--</h3>
+        </div>
+    </div>
+
+    <form class="payment-form">
+        <!-- Payment Mode -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Payment Method</mat-label>
+            <mat-select [(value)]="selectedMode">
+                <mat-option value="UPI">
+                    <mat-icon>qr_code_2</mat-icon> UPI / GPay / PhonePe
+                </mat-option>
+                <mat-option value="NetBanking">
+                    <mat-icon>account_balance</mat-icon> Net Banking
+                </mat-option>
+                <mat-option value="DebitCard">
+                    <mat-icon>credit_card</mat-icon> Debit Card
+                </mat-option>
+                <mat-option value="CreditCard">
+                    <mat-icon>credit_card</mat-icon> Credit Card
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!-- Amount Input -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Amount to Pay</mat-label>
+            <input matInput type="number" [(ngModel)]="enteredAmount" name="amount" [min]="data.amount" readonly>
+            <span matPrefix>₹&nbsp;</span>
+            <mat-icon matSuffix>verified_user</mat-icon>
+            <mat-hint *ngIf="data.type !== 'FORECLOSURE'">Amount is fixed for EMI payments</mat-hint>
+            <mat-hint *ngIf="data.type === 'FORECLOSURE'">Full outstanding amount required</mat-hint>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="!isValid()" (click)="confirmPay()">
+        Pay ₹{{ enteredAmount | number:'1.2-2' }}
+    </button>
+</mat-dialog-actions>

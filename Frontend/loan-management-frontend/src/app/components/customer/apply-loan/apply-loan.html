@@ -1,0 +1,150 @@
+<div class="apply-container">
+  <mat-card class="apply-card">
+    <div class="card-header">
+      <div class="header-icon">
+        <mat-icon>account_balance</mat-icon>
+      </div>
+      <h2>Apply for Loan</h2>
+      <p class="subtitle">Quick approval & low interest rates</p>
+    </div>
+
+    <div *ngIf="createdLoanId" class="upload-section">
+      <div class="success-header">
+        <mat-icon class="success-icon">check_circle</mat-icon>
+        <h3>Application Submitted!</h3>
+        <p>Your Loan ID is #{{ createdLoanId }}</p>
+      </div>
+
+      <div class="upload-box">
+        <h4>Upload Documents (Required)</h4>
+        <p class="subtitle">Please upload your Identity or Income Proof to complete the process.</p>
+
+        <!-- Styled Drop Zone -->
+        <div class="drop-zone" [class.has-file]="!!selectedFile" (click)="fileInput.click()">
+          <div class="icon-wrapper">
+            <mat-icon>{{ selectedFile ? 'check_circle' : 'cloud_upload' }}</mat-icon>
+          </div>
+
+          <div class="drop-text" *ngIf="!selectedFile">
+            <span>Click to browse files</span>
+          </div>
+
+          <div class="file-info" *ngIf="selectedFile">
+            <span class="file-name">{{ selectedFile.name }}</span>
+            <span class="file-size">{{ (selectedFile.size / 1024 / 1024) | number:'1.2-2' }} MB</span>
+          </div>
+
+          <input #fileInput type="file" (change)="onFileSelected($event)" accept=".pdf,.jpg,.png,.jpeg"
+            class="hidden-input">
+        </div>
+
+        <div class="action-buttons">
+          <button mat-raised-button color="primary" class="upload-btn" (click)="uploadDocument()"
+            [disabled]="!selectedFile || uploadingDoc">
+            <mat-icon>upload</mat-icon>
+            {{ uploadingDoc ? 'Uploading...' : 'Submit Documents' }}
+          </button>
+
+          <button mat-stroked-button (click)="onUploadLater()" class="skip-btn">
+            Finish / Upload Later
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN FORM -->
+    <form [formGroup]="form" class="apply-form" *ngIf="!createdLoanId">
+
+      <!-- Loan Type -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Loan Type</mat-label>
+        <mat-select formControlName="loanTypeId" (selectionChange)="onLoanTypeChange($event.value)">
+          <mat-option *ngFor="let l of loanTypes" [value]="l.loanTypeId">
+            {{ l.loanTypeName }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('loanTypeId')?.hasError('required')">Loan type is required</mat-error>
+      </mat-form-field>
+
+      <!-- ✅ Loan Details Info -->
+      <div class="loan-info-card" *ngIf="selectedLoanType">
+        <div class="info-row">
+          <div class="info-item">
+            <span class="info-label">Interest Rate</span>
+            <span class="info-value highlight">{{ selectedLoanType.interestRate }}%</span>
+          </div>
+          <div class="info-divider"></div>
+          <div class="info-item">
+            <span class="info-label">Loan Limit</span>
+            <span class="info-value">₹{{ selectedLoanType.minAmount | number }} - ₹{{ selectedLoanType.maxAmount |
+              number }}</span>
+          </div>
+          <div class="info-divider"></div>
+          <div class="info-item">
+            <span class="info-label">Max Tenure</span>
+            <span class="info-value">{{ selectedLoanType.maxTenureMonths }} Months</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <!-- Loan Amount -->
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Loan Amount (₹)</mat-label>
+          <input matInput type="number" formControlName="loanAmount" [attr.min]="selectedLoanType?.minAmount"
+            [attr.max]="selectedLoanType?.maxAmount">
+          <mat-error *ngIf="form.get('loanAmount')?.hasError('required')">Required</mat-error>
+          <mat-error *ngIf="form.get('loanAmount')?.hasError('min')">Min: ₹{{ selectedLoanType?.minAmount }}</mat-error>
+          <mat-error *ngIf="form.get('loanAmount')?.hasError('max')">Max: ₹{{ selectedLoanType?.maxAmount }}</mat-error>
+        </mat-form-field>
+
+        <!-- Tenure -->
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Tenure (Months)</mat-label>
+          <input matInput type="number" formControlName="tenureMonths" min="1"
+            [attr.max]="selectedLoanType?.maxTenureMonths">
+          <mat-error *ngIf="form.get('tenureMonths')?.hasError('required')">Required</mat-error>
+          <mat-error *ngIf="form.get('tenureMonths')?.hasError('max')">Max: {{ selectedLoanType?.maxTenureMonths
+            }}m</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Moratorium -->
+      <mat-form-field *ngIf="selectedLoanType?.hasMoratorium" appearance="outline" class="full-width">
+        <mat-label>Moratorium Months</mat-label>
+        <input matInput type="number" formControlName="moratoriumMonths">
+        <mat-hint>Optional grace period before EMI starts</mat-hint>
+        <mat-error *ngIf="form.get('moratoriumMonths')?.hasError('min')">Min 1 month</mat-error>
+      </mat-form-field>
+
+      <!-- EMI Preview -->
+      <div class="emi-preview-box" *ngIf="monthlyEmi > 0">
+        <div class="preview-header">
+          <span>Estimation</span>
+          <mat-icon>calculate</mat-icon>
+        </div>
+        <div class="preview-body">
+          <div class="preview-item">
+            <span class="label">Interest Rate</span>
+            <span class="value">{{ selectedLoanType?.interestRate }}%</span>
+          </div>
+          <div class="preview-item">
+            <span class="label">Total Pay</span>
+            <span class="value">{{ totalRepayment | currency:'INR':'symbol':'1.0-0' }}</span>
+          </div>
+          <div class="preview-total">
+            <span class="label">Monthly EMI</span>
+            <span class="value highlight">₹{{ monthlyEmi | number:'1.0-2' }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button mat-raised-button color="primary" class="submit-btn" (click)="submit()"
+        [disabled]="submitting || form.invalid">
+        {{ submitting ? 'Processing...' : 'Submit Application' }}
+      </button>
+
+    </form>
+  </mat-card>
+</div>

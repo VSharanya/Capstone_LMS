@@ -1,0 +1,30 @@
+<div class="tracker-container">
+    <div class="header">
+        <h2>Loan Status</h2>
+        <span class="loan-id">#{{ data.loan.loanId }}</span>
+    </div>
+
+    <div class="stepper">
+        <div class="step" *ngFor="let step of steps; let i = index" [ngClass]="getStepClass(i)">
+
+            <div class="step-indicator">
+                <div class="circle">
+                    <mat-icon>{{ step.icon }}</mat-icon>
+                </div>
+                <div class="line" *ngIf="i < steps.length - 1"></div>
+            </div>
+
+            <div class="step-content">
+                <h3>{{ step.label }}</h3>
+                <p class="date" *ngIf="step.date && step.date !== 'In Progress'">{{ step.date | date:'mediumDate' }}</p>
+                <p class="status-text" *ngIf="!step.date || step.date === 'In Progress'">
+                    {{ i === currentStepIndex ? 'In Progress' : 'Pending' }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button mat-button mat-dialog-close>Close</button>
+    </div>
+</div>

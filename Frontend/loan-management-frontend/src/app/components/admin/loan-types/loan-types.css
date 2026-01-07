@@ -1,0 +1,120 @@
+.main-content {
+    padding: 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #64748b;
+    margin: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #334155;
+    margin: 0;
+}
+
+.search-field {
+    width: 300px;
+}
+
+
+table {
+    width: 100%;
+}
+
+th.mat-header-cell {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+td.mat-cell {
+    font-size: 14px;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 16px !important;
+}
+
+
+mat-card {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+
+mat-slide-toggle {
+    transform: scale(0.9);
+}
+
+
+
+::ng-deep .mdc-switch.mdc-switch--selected:enabled .mdc-switch__track::after,
+::ng-deep .mdc-switch.mdc-switch--selected:enabled:hover .mdc-switch__track::after {
+    background: #03a9f4 !important;
+    
+}
+
+
+::ng-deep .mdc-switch.mdc-switch--selected:enabled .mdc-switch__handle::after {
+    background: #ffffff !important;
+}
+
+
+::ng-deep .mdc-switch.mdc-switch--selected:enabled .mdc-switch__icon {
+    color: #03a9f4 !important;
+}
+
+
+
+::ng-deep .mdc-switch:enabled:not(.mdc-switch--selected) .mdc-switch__track::after,
+::ng-deep .mdc-switch:enabled:not(.mdc-switch--selected):hover .mdc-switch__track::after {
+    background: #ffcdd2 !important;
+    
+    border: none !important;
+}
+
+
+::ng-deep .mdc-switch:enabled:not(.mdc-switch--selected) .mdc-switch__handle::after {
+    background: #c62828 !important;
+    
+}
+
+
+::ng-deep .mdc-switch:enabled:not(.mdc-switch--selected) .mdc-switch__icon {
+    color: #ffffff !important;
+}

@@ -1,0 +1,70 @@
+<div class="main-content">
+  <div class="header">
+    <h2 class="page-title">Welcome back, {{ userName() }}!</h2>
+    <p class="subtitle">Here is an overview of your loan accounts.</p>
+  </div>
+
+  <!-- 📊 Stats Grid -->
+  <div class="stats-grid">
+    <mat-card class="stat-card blue-gradient">
+      <mat-icon>assignment</mat-icon>
+      <div class="stat-content">
+        <h3>{{ totalApplied() }}</h3>
+        <p>Total Applications</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card green-gradient">
+      <mat-icon>check_circle</mat-icon>
+      <div class="stat-content">
+        <h3>{{ activeLoans() }}</h3>
+        <p>Active Loans</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card orange-gradient">
+      <mat-icon>payments</mat-icon>
+      <div class="stat-content">
+        <h3>₹{{ totalPaid() | number }}</h3>
+        <p>Total Paid</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card purple-gradient">
+      <mat-icon>account_balance_wallet</mat-icon>
+      <div class="stat-content">
+        <h3>₹{{ totalDebt() | number }}</h3>
+        <p>Current Debt</p>
+      </div>
+    </mat-card>
+  </div>
+
+  <h3 class="section-title">Quick Actions</h3>
+
+  <!-- ⚡ Action Grid -->
+  <div class="card-container">
+
+    <mat-card class="action-card">
+      <div class="icon-header">
+        <mat-icon class="action-icon">add_circle</mat-icon>
+        <h3>Apply for Loan</h3>
+      </div>
+      <p>Submit a new loan application getting quick approval.</p>
+      <button mat-raised-button color="primary" routerLink="/customer/apply-loan">
+        Apply Now
+      </button>
+    </mat-card>
+
+    <mat-card class="action-card">
+      <div class="icon-header">
+        <mat-icon class="action-icon">list_alt</mat-icon>
+        <h3>My Loans</h3>
+      </div>
+      <p>Track your application status and view EMI schedules.</p>
+      <button mat-stroked-button color="primary" routerLink="/customer/my-loans">
+        View Loans
+      </button>
+    </mat-card>
+
+  </div>
+</div>

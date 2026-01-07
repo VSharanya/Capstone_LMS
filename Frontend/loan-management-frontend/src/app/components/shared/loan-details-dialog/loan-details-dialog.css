@@ -1,0 +1,46 @@
+
+:host {
+    display: block;
+    background: white;
+    color: #1e293b;
+    border-radius: 8px;
+    
+}
+
+
+mat-dialog-content {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #f1f5f9;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.value {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0 0 16px 0;
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section {
+    margin-bottom: 24px;
+}

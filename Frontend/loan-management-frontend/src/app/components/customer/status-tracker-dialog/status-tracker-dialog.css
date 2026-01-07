@@ -1,0 +1,146 @@
+.tracker-container {
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.loan-id {
+    background: #f1f5f9;
+    color: #64748b;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.stepper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.step {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.step:last-child {
+    padding-bottom: 0;
+}
+
+
+.step-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.circle mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.line {
+    width: 2px;
+    flex-grow: 1;
+    background: #e2e8f0;
+    margin-top: 4px;
+    min-height: 24px;
+}
+
+
+.step-content {
+    padding-top: 8px;
+}
+
+.step-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.date {
+    margin: 0;
+    font-size: 13px;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.status-text {
+    margin: 0;
+    font-size: 12px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+
+.step.completed .circle {
+    background: #ecfdf5;
+    color: #10b981;
+}
+
+.step.completed .line {
+    background: #10b981;
+}
+
+.step.completed h3 {
+    color: #1e293b;
+}
+
+.step.active .circle {
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.step.active h3 {
+    color: #3b82f6;
+}
+
+.step.rejected .circle {
+    background: #ef4444;
+    color: white;
+}
+
+.step.rejected h3 {
+    color: #ef4444;
+}
+
+
+.actions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+}

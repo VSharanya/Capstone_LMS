@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Reject Loan</h2>
+
+    <form [formGroup]="form">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Remarks</mat-label>
+        <textarea
+          matInput
+          rows="4"
+          formControlName="remarks"
+          placeholder="Enter rejection reason">
+        </textarea>
+
+        <mat-error *ngIf="form.get('remarks')?.hasError('required')">
+          Remarks are required
+        </mat-error>
+      </mat-form-field>
+    </form>
+
+    <div mat-dialog-actions>
+      <button mat-button (click)="close()">Cancel</button>
+      <button
+        mat-raised-button
+        color="warn"
+        [disabled]="form.invalid"
+        (click)="confirm()">
+        Reject
+      </button>
+    </div>

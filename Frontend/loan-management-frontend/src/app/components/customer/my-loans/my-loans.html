@@ -1,0 +1,111 @@
+<div class="main-content">
+  <h2>My Loans</h2>
+
+  <!-- Search -->
+  <!-- Filters -->
+  <div class="filter-row">
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-label>Search loans</mat-label>
+      <input matInput placeholder="Type to search..." (keyup)="applyFilter($event)">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="status-filter">
+      <mat-label>Filter by Status</mat-label>
+      <mat-select [value]="selectedStatus" (selectionChange)="onStatusChange($event.value)">
+        <mat-option value="All">All Loans</mat-option>
+        <mat-option value="Active">Active</mat-option>
+        <mat-option value="Applied">Applied</mat-option>
+        <mat-option value="Under Review">Under Review</mat-option>
+        <mat-option value="Rejected">Rejected</mat-option>
+        <mat-option value="Closed">Closed</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="loading">Loading loans...</div>
+
+  <table mat-table matSort [dataSource]="dataSource" [hidden]="loading || !dataSource.data.length">
+
+    <!-- Loan Type -->
+    <ng-container matColumnDef="loanType">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Loan Type</th>
+      <td mat-cell *matCellDef="let l">{{ l.loanType }}</td>
+    </ng-container>
+
+    <!-- Amount -->
+    <ng-container matColumnDef="loanAmount">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
+      <td mat-cell *matCellDef="let l">₹{{ l.loanAmount }}</td>
+    </ng-container>
+
+    <!-- Tenure -->
+    <ng-container matColumnDef="tenureMonths">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Tenure</th>
+      <td mat-cell *matCellDef="let l">{{ l.tenureMonths }} months</td>
+    </ng-container>
+
+    <!-- Status -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+      <td mat-cell *matCellDef="let l">
+        <span [ngClass]="getStatusClass(l.status)">
+          {{ l.status }}
+        </span>
+      </td>
+    </ng-container>
+
+    <!-- Applied Date -->
+    <ng-container matColumnDef="appliedDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Applied On</th>
+      <td mat-cell *matCellDef="let l">
+        {{ l.appliedDate | date:'dd/MM/yyyy' }}
+      </td>
+    </ng-container>
+
+    <!-- Actions -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+
+      <td mat-cell *matCellDef="let l">
+        <div class="actions-cell">
+          <!-- Track Status -->
+          <button mat-icon-button class="track-btn" matTooltip="Track Status" (click)="openTracker(l)">
+            <mat-icon>timeline</mat-icon>
+          </button>
+
+          <!-- View EMI -->
+          <button mat-flat-button class="view-emi-btn" (click)="viewEmi(l.loanId)"
+            *ngIf="l.status === 'Active' || l.status === 'Closed'">
+            <mat-icon>receipt_long</mat-icon>
+            {{ l.status === 'Closed' ? 'History' : 'EMI' }}
+          </button>
+
+          <!-- Upload Documents -->
+          <button mat-stroked-button class="upload-btn" (click)="openUploadDialog(l.loanId)"
+            *ngIf="l.status === 'Applied' && !l.hasDocuments">
+            <mat-icon>upload_file</mat-icon>
+            Upload
+          </button>
+        </div>
+      </td>
+    </ng-container>
+
+    <!-- Remarks -->
+    <ng-container matColumnDef="remarks">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Remarks</th>
+      <td mat-cell *matCellDef="let l">{{ l.remarks || '-' }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
+    [hidden]="loading || !dataSource.data.length">
+  </mat-paginator>
+
+  <div *ngIf="!loading && !dataSource.data.length">
+    No loans found.
+  </div>
+</div>

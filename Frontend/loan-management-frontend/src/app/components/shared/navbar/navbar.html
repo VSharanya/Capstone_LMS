@@ -1,0 +1,78 @@
+<mat-toolbar class="navbar">
+    <span class="logo" routerLink="/">LoanSphere</span>
+    <span class="spacer"></span>
+
+    <ng-container *ngIf="isLoggedIn(); else loginBtn">
+
+        <!-- Admin Links -->
+        <ng-container *ngIf="role() === 'Admin'">
+            <a mat-button routerLink="/admin/dashboard" routerLinkActive="active">Dashboard</a>
+            <a mat-button routerLink="/admin/loans" routerLinkActive="active">Loans</a>
+        </ng-container>
+
+        <!-- Loan Officer Links -->
+        <ng-container *ngIf="role() === 'LoanOfficer'">
+            <a mat-button routerLink="/loan-officer/dashboard" routerLinkActive="active">Dashboard</a>
+            <a mat-button routerLink="/loan-officer/loans" routerLinkActive="active">Applications</a>
+        </ng-container>
+
+        <!-- Customer Links -->
+        <ng-container *ngIf="role() === 'Customer'">
+            <a mat-button routerLink="/customer/dashboard" routerLinkActive="active">Dashboard</a>
+            <a mat-button routerLink="/customer/my-loans" routerLinkActive="active">My Loans</a>
+            <a mat-button routerLink="/customer/apply-loan" routerLinkActive="active">Apply</a>
+        </ng-container>
+
+        <!-- Shared Reports (Admin/Officer) -->
+        <a mat-button *ngIf="role() === 'Admin' || role() === 'LoanOfficer'" routerLink="/reports">Reports</a>
+
+        <!-- Notifications -->
+        <button mat-icon-button [matMenuTriggerFor]="notifMenu" class="notif-btn">
+            <mat-icon [matBadge]="unreadCount()" [matBadgeHidden]="unreadCount() === 0"
+                matBadgeColor="warn">notifications</mat-icon>
+        </button>
+        <mat-menu #notifMenu="matMenu" xPosition="before" class="notif-menu">
+            <div class="notif-header">
+                <span>Notifications</span>
+                <button mat-button color="primary" (click)="markAllRead()" *ngIf="unreadCount() > 0">Mark all
+                    read</button>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="notif-list">
+                <div *ngIf="notifications().length === 0" class="empty-state">
+                    No notifications
+                </div>
+                <button mat-menu-item *ngFor="let n of notifications()" [class.unread]="!n.isRead"
+                    (click)="markRead(n)">
+                    <mat-icon [class.info-icon]="n.type === 'Info'" [class.success-icon]="n.type === 'Success'"
+                        [class.warn-icon]="n.type === 'Warning'" [class.error-icon]="n.type === 'Error'">
+                        {{ getIcon(n.type) }}
+                    </mat-icon>
+                    <div class="notif-content">
+                        <span class="notif-msg">{{ n.message }}</span>
+                        <span class="notif-time">{{ n.createdAt | date:'short' }}</span>
+                    </div>
+                </button>
+            </div>
+        </mat-menu>
+
+        <!-- User Menu -->
+        <button mat-icon-button [matMenuTriggerFor]="userMenu">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu">
+            <button mat-menu-item disabled>{{ currentUser() }}</button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item (click)="logout()">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Logout</span>
+            </button>
+        </mat-menu>
+
+    </ng-container>
+
+    <ng-template #loginBtn>
+        <a mat-button routerLink="/auth/login" style="margin-right: 8px;">Login</a>
+        <a mat-flat-button color="primary" routerLink="/auth/register">Register</a>
+    </ng-template>
+</mat-toolbar>
