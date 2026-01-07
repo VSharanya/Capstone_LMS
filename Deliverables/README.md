@@ -46,7 +46,7 @@ LoanSphere is a modern, full-stack Loan Management System designed to streamline
 - **Charts**: Interactive data visualization for reports
 
 ### Backend
-- **Framework**: [.NET 8 Web API](https://dotnet.microsoft.com/)
+- **Framework**: [.NET 9 Web API](https://dotnet.microsoft.com/)
 - **Database**: SQL Server
 - **ORM**: Entity Framework Core
 - **Authentication**: JWT (JSON Web Tokens)
